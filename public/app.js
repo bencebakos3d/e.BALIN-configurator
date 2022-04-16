@@ -3,7 +3,6 @@ const imgBase = document.getElementById("img-base");
 
 biminiInput.addEventListener("change", () => {
     if (biminiInput.checked) {
-        console.log("checked")
         imgBase.setAttribute("src", "img/ebalin_base_nobimini.jpg" )
     } else {
         imgBase.setAttribute("src", "img/ebalin_base.jpg")
@@ -13,11 +12,23 @@ biminiInput.addEventListener("change", () => {
 function toggleDropdown(wrapperID) {
     const menu = document.getElementById(wrapperID)
     const icon = document.getElementById(wrapperID + "-icon")
-    if (menu.style.visibility === "hidden") {
-        menu.style.visibility = "initial"
+    if (menu.style.display === "none") {
+        menu.style.display = "initial"
         icon.style.transform = "none"
     } else {
-        menu.style.visibility = "hidden"
+        menu.style.display = "none"
         icon.style.transform = "rotate(180deg)"
     }
+}
+
+fetch('/options').then(response => response.json()).then(data => {
+    const optionWrappers = document.querySelectorAll('.option');
+    optionWrappers.forEach(option => {
+        const optionID = parseInt(option.getAttribute("databaseID"));
+        option.children[0].innerHTML = data[optionID - 1].name;
+    })
+})
+
+function toggleOptionDetails(element) {
+    
 }
