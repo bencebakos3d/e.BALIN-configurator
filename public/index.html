@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e.BALIN Configurator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="configurator-wrapper">
+        <div class="configurator-left">
+            <img id="img-base" src="img/ebalin_base.jpg" alt="">
+        </div>
+        <div class="configurator-right">
+            <div class="configurator-header">
+                <span>e.BALIN Túra</span>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-hajotest')">
+                    <span>Hajótest</span>
+                    <img id="dropdown-hajotest-icon" src="icons/dropdown-up.png" alt="">
+                </div>
+                <div class="dropdown-menu" id="dropdown-hajotest">
+                    <div class="option">
+                        <span>Bimini</span>
+                        <input type="checkbox" id="bimini-input">
+                    </div>
+                    <div class="option">
+                        <span>Orr korlát</span>
+                        <input type="checkbox" id="orrkorlat-input">
+                    </div>
+                    <div class="option">
+                        <span>Vezetőülés háttámla</span>
+                        <input type="checkbox" id="vezetoules-input">
+                    </div>
+                    <div class="option">
+                        <span>Vezetőülés kárpit</span>
+                        <input type="checkbox" id="vezetoules-karpit-input">
+                    </div>
+                    <div class="option">
+                        <span>Hátsó üléskárpit</span>
+                        <input type="checkbox" id="hatsoules-input">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
