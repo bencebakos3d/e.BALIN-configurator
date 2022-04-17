@@ -9,7 +9,7 @@ const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     database: 'ebalin-configurator'
-});
+})
 
 app.use(express.static('public'))
 app.use(express.json())

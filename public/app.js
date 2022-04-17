@@ -3,9 +3,9 @@ const imgBase = document.getElementById("img-base");
 
 biminiInput.addEventListener("change", () => {
     if (biminiInput.checked) {
-        imgBase.setAttribute("src", "img/ebalin_base_nobimini.jpg" )
+        imgBase.setAttribute("src", "img/ebalin_base.jpg" )
     } else {
-        imgBase.setAttribute("src", "img/ebalin_base.jpg")
+        imgBase.setAttribute("src", "img/ebalin_base_nobimini.jpg")
     }
 })
 
