@@ -1,159 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e.BALIN Configurator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="configurator-wrapper">
-        <div class="configurator-left">
-            <img id="img-base" src="img/ebalin_base_nobimini.jpg" alt="">
-        </div>
-        <div class="configurator-right">
-            <div class="configurator-header">
-                <span>e.BALIN Túra</span>
-            </div>
-            <div class="dropdown">
-                <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-hajotest')">
-                    <span>Hajótest</span>
-                    <img id="dropdown-hajotest-icon" src="icons/dropdown-up.png" alt="">
-                </div>
-                <div class="dropdown-menu" id="dropdown-hajotest">
-                    <div class="option" databaseID=19 >
-                        <span>Bimini</span>
-                        <input type="checkbox" id="bimini-input">
-                    </div>
-                    <div class="option" databaseID=37 >
-                        <span>Orr korlát</span>
-                        <input type="checkbox" id="orrkorlat-input">
-                    </div>
-                    <div class="option" databaseID=36 >
-                        <span>Vezetőülés háttámla</span>
-                        <input type="checkbox" id="vezetoules-input">
-                    </div>
-                    <div class="option" databaseID=42 >
-                        <span>Kormányállás kárpit</span>
-                        <input type="checkbox" id="vezetoules-karpit-input">
-                    </div>
-                    <div class="option" databaseID=41 >
-                        <span>Orr korlát kárpit</span>
-                        <input type="checkbox" id="hatsoules-input">
-                    </div>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-elektronika')">
-                    <span>Elektronika</span>
-                    <img id="dropdown-elektronika-icon" src="icons/dropdown-up.png" alt="">
-                </div>
-                <div class="dropdown-menu" id="dropdown-elektronika">
-                    <div class="option" databaseID=14 >
-                        <span>Elektromos kiépítés</span>
-                        <input type="checkbox" id="bimini-input">
-                    </div>
-                    <div class="option" databaseID=15 >
-                        <span>360° LED helyzetjelző lámpa</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=35 >
-                        <span>Süllyesztett akkutartó</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=16 >
-                        <span>Azonosító chip</span>
-                        <input type="checkbox">
-                    </div>
-                </div>
-            </div> 
-            <div class="dropdown">
-                <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-kiegeszitok')">
-                    <span>Kiegészítők</span>
-                    <img id="dropdown-kiegeszitok-icon" src="icons/dropdown-up.png" alt="">
-                </div>
-                <div class="dropdown-menu" id="dropdown-kiegeszitok">
-                    <div class="option" databaseID=12 >
-                        <span>Evező pár</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=13 >
-                        <span>Pádli evező</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=24 >
-                        <span>CANNON horgászbot tartó</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=25 >
-                        <span>CANNON aljzat</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=26 >
-                        <span>Telefontartó</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=27 >
-                        <span>Hőszigetelt italtartó</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=28 >
-                        <span>Névtábla</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=29 >
-                        <span>Orr feliratozás</span>
-                        <input type="checkbox">
-                    </div>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-tarolas')">
-                    <span>Tárolás, szállítás</span>
-                    <img id="dropdown-tarolas-icon" src="icons/dropdown-up.png" alt="">
-                </div>
-                <div class="dropdown-menu" id="dropdown-tarolas">
-                    <div class="option" databaseID=17 >
-                        <span>Tároló ponyva</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=20 >
-                        <span>Összecsukható horgony</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=21 >
-                        <span>Horgony kötél</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=22 >
-                        <span>Kikötőkötél</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=23 >
-                        <span>Mericske</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=30 >
-                        <span>Sólyakocsi</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=32 >
-                        <span>Sólyakocsi 2 bolygóval</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=33 >
-                        <span>Sólyakocsi rozsdamentes</span>
-                        <input type="checkbox">
-                    </div>
-                    <div class="option" databaseID=31 >
-                        <span>Vonófej</span>
-                        <input type="checkbox">
-                    </div>
-                </div>
-            </div>           
-        </div>
-    </div>
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
