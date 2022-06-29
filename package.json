@@ -1,0 +1,26 @@
+{
+  "name": "e.BALIN-configurator",
+  "version": "1.0.0",
+  "description": "Boat configurator for web, based on premade 3D renders",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencebakos3d/e.BALIN-configurator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bencebakos3d/e.BALIN-configurator/issues"
+  },
+  "homepage": "https://github.com/bencebakos3d/e.BALIN-configurator#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "serverless-mysql": "^1.5.4"
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e.BALIN Configurator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="configurator-wrapper">
+      <div class="configurator-left">
+        <div class="button-wrapper">
+          <button class="img-btn" id="img-btn-left" onclick="switchView(false)"></button>
+        </div>
+        <div class="img-wrapper">
+          <img id="img-base" src="data/body_0000.png" style="z-index: 0" />
+          <img id="upholstery-beige" src="data/upholstery_beige_0000.png" style="z-index: 1; visibility: hidden" />
+          <img id="bimini" src="data/bimini_0000.png" style="z-index: 2; visibility: hidden" />
+          <img id="guard" src="data/guard_0000.png" style="z-index: 3; visibility: hidden" />
+          <img id="noseguard" src="data/noseguard_0000.png" style="z-index: 4; visibility: hidden" />
+        </div>
+        <div class="button-wrapper">
+          <button class="img-btn" id="img-btn-right" onclick="switchView(true)"></button>
+        </div>
+      </div>
+      <div class="configurator-right">
+        <div class="configurator-header">
+          <span>e.BALIN Túra</span>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-hajotest')">
+            <span>Hajótest</span>
+            <img id="dropdown-hajotest-icon" src="icons/dropdown-up.png" alt="" />
+          </div>
+          <div class="dropdown-menu" id="dropdown-hajotest">
+            <div class="option" databaseID="19">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="bimini-input" onclick="showElement('bimini')" />
+                <span>Bimini</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="37">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="orrkorlat-input" onclick="showElement('noseguard')" />
+                <span>Orr korlát</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="37">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="orrkorlat-input" onclick="showElement('guard')" />
+                <span>Hátsó korlát</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('upholstery-beige')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="karpit-input" />
+                <span>Kárpit</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-elektronika')">
+            <span>Elektronika</span>
+            <img id="dropdown-elektronika-icon" src="icons/dropdown-up.png" alt="" />
+          </div>
+          <div class="dropdown-menu" id="dropdown-elektronika">
+            <div class="option" databaseID="14">
+              <span>Elektromos kiépítés</span>
+              <input type="checkbox" id="bimini-input" />
+            </div>
+            <div class="option" databaseID="15">
+              <span>360° LED helyzetjelző lámpa</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="35">
+              <span>Süllyesztett akkutartó</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="16">
+              <span>Azonosító chip</span>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-kiegeszitok')">
+            <span>Kiegészítők</span>
+            <img id="dropdown-kiegeszitok-icon" src="icons/dropdown-up.png" alt="" />
+          </div>
+          <div class="dropdown-menu" id="dropdown-kiegeszitok">
+            <div class="option" databaseID="12">
+              <span>Evező pár</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="13">
+              <span>Pádli evező</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="24">
+              <span>CANNON horgászbot tartó</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="25">
+              <span>CANNON aljzat</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="26">
+              <span>Telefontartó</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="27">
+              <span>Hőszigetelt italtartó</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="28">
+              <span>Névtábla</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="29">
+              <span>Orr feliratozás</span>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-tarolas')">
+            <span>Tárolás, szállítás</span>
+            <img id="dropdown-tarolas-icon" src="icons/dropdown-up.png" alt="" />
+          </div>
+          <div class="dropdown-menu" id="dropdown-tarolas">
+            <div class="option" databaseID="17">
+              <span>Tároló ponyva</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="20">
+              <span>Összecsukható horgony</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="21">
+              <span>Horgony kötél</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="22">
+              <span>Kikötőkötél</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="23">
+              <span>Mericske</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="30">
+              <span>Sólyakocsi</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="32">
+              <span>Sólyakocsi 2 bolygóval</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="33">
+              <span>Sólyakocsi rozsdamentes</span>
+              <input type="checkbox" />
+            </div>
+            <div class="option" databaseID="31">
+              <span>Vonófej</span>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
