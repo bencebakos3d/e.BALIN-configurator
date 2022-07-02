@@ -19,6 +19,12 @@
           <img id="bimini" src="data/bimini_0000.png" style="z-index: 2; visibility: hidden" />
           <img id="guard" src="data/guard_0000.png" style="z-index: 3; visibility: hidden" />
           <img id="noseguard" src="data/noseguard_0000.png" style="z-index: 4; visibility: hidden" />
+          <img id="dorzslec" src="data/dorzslec_0000.png" style="z-index: 1; visibility: hidden" />
+          <img id="kikotokarika" src="data/kikotokarika_0000.png" style="z-index: 5; visibility: hidden" />
+          <img id="kikotobika" src="data/kikotobika_0000.png" style="z-index: 6; visibility: hidden" />
+          <img id="ladder" src="data/ladder_0000.png" style="z-index: 6; visibility: hidden" />
+          <img id="antialgae" src="data/antialgae_0000.png" style="z-index: 1; visibility: hidden" />
+          <img id="cupholders" src="data/cupholders_0000.png" style="z-index: 6; visibility: hidden" />
         </div>
         <div class="button-wrapper">
           <button class="img-btn" id="img-btn-right" onclick="switchView(true)"></button>
@@ -43,14 +49,14 @@
             </div>
             <div class="option" databaseID="37">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="orrkorlat-input" onclick="showElement('noseguard')" />
+                <input type="checkbox" id="noseguard-input" onclick="showElement('noseguard')" />
                 <span>Orr korlát</span>
               </div>
-              <span>50 000 Ft</span>
+              <span>165 000 Ft</span>
             </div>
             <div class="option" databaseID="37">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="orrkorlat-input" onclick="showElement('guard')" />
+                <input type="checkbox" id="guard-input" onclick="showElement('guard')" />
                 <span>Hátsó korlát</span>
               </div>
               <span>50 000 Ft</span>
@@ -61,6 +67,48 @@
                 <span>Kárpit</span>
               </div>
               <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('dorzslec')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="dorzslec-input" />
+                <span>Dörzsléc</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('kikotokarika')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="kikotokarika-input" />
+                <span>Kikötőkarika</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('kikotobika')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="kikotobika-input" />
+                <span>Kikötőbika</span>
+              </div>
+              <span>50 000 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('ladder')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="ladder-input" />
+                <span>Fürdőlépcső</span>
+              </div>
+              <span>49 500 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('antialgae')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="antialgae-input" />
+                <span>Algagátló</span>
+              </div>
+              <span>49 500 Ft</span>
+            </div>
+            <div class="option" databaseID="42" onclick="showElement('cupholders')">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="cupholders-input" />
+                <span>Italtartó</span>
+              </div>
+              <span>49 500 Ft</span>
             </div>
           </div>
         </div>
