@@ -90,3 +90,25 @@ for (let i = 0; i < imageList.length; i++) {
   img.src = `data/${imageList[i]}`;
   console.log(img.src);
 }
+
+const loadingScreen = document.querySelector('.loader-wrapper');
+
+Promise.all(
+  Array.from(document.images).map((img) => {
+    if (img.complete) return Promise.resolve(img.naturalHeight !== 0);
+    return new Promise((resolve) => {
+      img.addEventListener('load', () => resolve(true));
+      img.addEventListener('error', () => resolve(false));
+    });
+  })
+).then((results) => {
+  if (results.every((res) => res)) {
+    console.log('all images loaded successfully');
+    loadingScreen.style.opacity = '0';
+    setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
+  } else {
+    console.log('Some images failed to load, all finished loading');
+    loadingScreen.style.opacity = '0';
+    setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
+  }
+});
