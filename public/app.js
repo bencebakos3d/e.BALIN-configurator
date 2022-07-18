@@ -46,7 +46,7 @@ function toggleDropdown(wrapperID) {
   const menu = document.getElementById(wrapperID);
   const icon = document.getElementById(wrapperID + '-icon');
   if (menu.style.display === 'none') {
-    menu.style.display = 'initial';
+    menu.style.display = 'flex';
     icon.style.transform = 'none';
   } else {
     menu.style.display = 'none';
@@ -112,3 +112,12 @@ Promise.all(
     setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
   }
 });
+
+function onlyOne(radio) {
+  if (document.getElementById(radio).checked == false) {
+    console.log('checkeeed');
+    document.getElementById(radio).checked = true;
+  } else {
+    document.getElementById(radio).checked = false;
+  }
+}

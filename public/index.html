@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e.BALIN Configurator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="configurator-wrapper">
@@ -19,6 +22,7 @@
         <div class="img-wrapper">
           <img id="img-base" src="data/body_0000.png" style="z-index: 0" />
           <img id="upholstery-beige" src="data/upholstery_beige_0000.png" style="z-index: 1; visibility: hidden" />
+          <img id="upholstery-blue" src="data/upholstery_blue_0000.png" style="z-index: 1; visibility: hidden" />
           <img id="bimini" src="data/bimini_0000.png" style="z-index: 2; visibility: hidden" />
           <img id="guard" src="data/guard_0000.png" style="z-index: 3; visibility: hidden" />
           <img id="noseguard" src="data/noseguard_0000.png" style="z-index: 4; visibility: hidden" />
@@ -45,73 +49,82 @@
           <div class="dropdown-menu" id="dropdown-hajotest">
             <div class="option" databaseID="19">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="bimini-input" onclick="showElement('bimini')" />
+                <input type="checkbox" id="bimini-input" onchange="showElement('bimini')" />
                 <span>Bimini</span>
               </div>
               <span>50 000 Ft</span>
             </div>
             <div class="option" databaseID="37">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="noseguard-input" onclick="showElement('noseguard')" />
+                <input type="checkbox" id="noseguard-input" onchange="showElement('noseguard')" />
                 <span>Orr korlát</span>
               </div>
               <span>165 000 Ft</span>
             </div>
             <div class="option" databaseID="37">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="guard-input" onclick="showElement('guard')" />
+                <input type="checkbox" id="guard-input" onchange="showElement('guard')" />
                 <span>Hátsó korlát</span>
               </div>
               <span>50 000 Ft</span>
             </div>
-            <div class="option" databaseID="42" onclick="showElement('upholstery-beige')">
-              <div class="checkbox-wrapper">
-                <input type="checkbox" id="karpit-input" />
-                <span>Kárpit</span>
-              </div>
-              <span>50 000 Ft</span>
-            </div>
-            <div class="option" databaseID="42" onclick="showElement('dorzslec')">
+            <div class="option" databaseID="42" onchange="showElement('dorzslec')">
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="dorzslec-input" />
                 <span>Dörzsléc</span>
               </div>
               <span>50 000 Ft</span>
             </div>
-            <div class="option" databaseID="42" onclick="showElement('kikotokarika')">
+            <div class="option" databaseID="42" onchange="showElement('kikotokarika')">
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="kikotokarika-input" />
                 <span>Kikötőkarika</span>
               </div>
               <span>50 000 Ft</span>
             </div>
-            <div class="option" databaseID="42" onclick="showElement('kikotobika')">
+            <div class="option" databaseID="42" onchange="showElement('kikotobika')">
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="kikotobika-input" />
                 <span>Kikötőbika</span>
               </div>
               <span>50 000 Ft</span>
             </div>
-            <div class="option" databaseID="42" onclick="showElement('ladder')">
+            <div class="option" databaseID="42" onchange="showElement('ladder')">
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="ladder-input" />
                 <span>Fürdőlépcső</span>
               </div>
               <span>49 500 Ft</span>
             </div>
-            <div class="option" databaseID="42" onclick="showElement('antialgae')">
+            <div class="option" databaseID="42" onchange="showElement('antialgae')">
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="antialgae-input" />
                 <span>Algagátló</span>
               </div>
               <span>49 500 Ft</span>
             </div>
-            <div class="option" databaseID="42" onclick="showElement('cupholders')">
+            <div class="option" databaseID="42" onchange="showElement('cupholders')">
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="cupholders-input" />
                 <span>Italtartó</span>
               </div>
               <span>49 500 Ft</span>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-karpit')">
+            <span>Kárpit</span>
+            <img id="dropdown-karpit-icon" src="icons/dropdown-up.png" alt="" />
+          </div>
+          <div class="dropdown-menu-inline" id="dropdown-karpit">
+            <div class="upholstery-option-wrapper">
+              <input type="radio" class="upholstery-option unselectable" id="kekkarpit-input" name="checkbox-upholstery" onchange="showElement('upholstery-blue')" onclick="onlyOne('kekkarpit-input')" />
+              <span class="upholstery-option-label" id="kekkarpit-label">Tengerkék műbőr<br />160 000 Ft</span>
+            </div>
+            <div class="upholstery-option-wrapper">
+              <input type="radio" class="upholstery-option unselectable" id="bezskarpit-input" name="checkbox-upholstery" onchange="showElement('upholstery-beige')" onclick="onlyOne('bezskarpit-input')" />
+              <span class="upholstery-option-label" id="bezskarpit-label">Beige műbőr<br />160 000 Ft</span>
             </div>
           </div>
         </div>
