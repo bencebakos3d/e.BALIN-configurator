@@ -159,10 +159,10 @@ body {
   scale: 1.1;
 }
 
-#kekkarpit-input {
+.upholstery-blue {
   background-color: blue;
 }
-#bezskarpit-input {
+.upholstery-beige {
   background-color: burlywood;
 }
 
@@ -182,7 +182,7 @@ body {
   visibility: hidden;
   z-index: 0;
 }
-#kekkarpit-input:hover + #kekkarpit-label {
+.upholstery-blue:hover + #kekkarpit-label {
   visibility: initial;
   z-index: 10;
 }
@@ -190,7 +190,7 @@ body {
   visibility: hidden;
   z-index: 0;
 }
-#bezskarpit-input:hover + #bezskarpit-label {
+.upholstery-beige:hover + #bezskarpit-label {
   visibility: initial;
   z-index: 10;
 }

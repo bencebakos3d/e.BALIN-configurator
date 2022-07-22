@@ -88,7 +88,6 @@ function showElement(id) {
 for (let i = 0; i < imageList.length; i++) {
   let img = new Image();
   img.src = `data/${imageList[i]}`;
-  console.log(img.src);
 }
 
 const loadingScreen = document.querySelector('.loader-wrapper');
@@ -103,21 +102,35 @@ Promise.all(
   })
 ).then((results) => {
   if (results.every((res) => res)) {
-    console.log('all images loaded successfully');
     loadingScreen.style.opacity = '0';
     setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
   } else {
-    console.log('Some images failed to load, all finished loading');
     loadingScreen.style.opacity = '0';
     setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
   }
 });
 
-function onlyOne(radio) {
-  if (document.getElementById(radio).checked == false) {
-    console.log('checkeeed');
-    document.getElementById(radio).checked = true;
-  } else {
-    document.getElementById(radio).checked = false;
+function selectOnlyThis(name) {
+  let chks = document.getElementsByName(name);
+  console.log(chks);
+  for (let i = 0; i < chks.length; i++) {
+    chks[i].onclick = function () {
+      if (this.checked) {
+        document.getElementById(this.id).style.visibility = 'initial';
+        console.log('this is checked');
+      } else {
+        for (let k = 0; k < chks.length; k++) {
+          document.getElementById(chks[k].id).style.visibility = 'hidden';
+        }
+      }
+      for (let j = 0; j < chks.length; j++) {
+        if (chks[j] != this && this.checked) {
+          chks[j].checked = false;
+          document.getElementById(chks[j].id).style.visibility = 'hidden';
+        }
+      }
+    };
   }
 }
+
+selectOnlyThis('checkbox-upholstery');
