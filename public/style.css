@@ -64,6 +64,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-top: 100px;
 }
 #img-btn-right {
   transform: rotate(180deg);
@@ -146,9 +147,8 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 80px;
-  height: 80px;
-  background-color: blue;
+  width: 70px;
+  height: 70px;
   margin: 0px;
   cursor: pointer;
   border-radius: 0px;
@@ -160,10 +160,10 @@ body {
 }
 
 .upholstery-blue {
-  background-color: blue;
+  background-color: #0b0b84;
 }
 .upholstery-beige {
-  background-color: burlywood;
+  background-color: #dbc09f;
 }
 
 .upholstery-option-label {
@@ -198,7 +198,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 0px 30px 0px 0px;
+  margin: 0px 10px 20px 0px;
 }
 .loader {
   font-size: 10px;
