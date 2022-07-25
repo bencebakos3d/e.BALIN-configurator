@@ -41,6 +41,9 @@
         <div class="configurator-header">
           <span>e.BALIN Túra</span>
         </div>
+        <div class="configurator-price-wrapper">
+          <h2 id="final-price"></h2>
+        </div>
         <div class="dropdown">
           <div class="dropdown-header unselectable" onclick="toggleDropdown('dropdown-hajotest')">
             <span>Hajótest</span>
@@ -49,7 +52,7 @@
           <div class="dropdown-menu" id="dropdown-hajotest">
             <div class="option" databaseID="19">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="bimini-input" onchange="showElement('bimini')" />
+                <input type="checkbox" id="bimini-input" onchange="showElement('bimini', this)" data-price="50000" />
                 <span>Bimini</span>
               </div>
               <span>50 000 Ft</span>

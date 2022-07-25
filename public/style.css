@@ -156,14 +156,15 @@ body {
 }
 .upholstery-option:checked {
   box-shadow: 0px 0px 4px 0px #252525;
-  scale: 1.1;
 }
 
 .upholstery-blue {
-  background-color: #0b0b84;
+  background-image: url('img/upholstery_blue_texture.jpg');
+  background-size: cover;
 }
 .upholstery-beige {
-  background-color: #dbc09f;
+  background-image: url('img/upholstery_beige_texture.jpg');
+  background-size: cover;
 }
 
 .upholstery-option-label {

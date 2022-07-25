@@ -41,6 +41,13 @@ const biminiInput = document.getElementById('bimini-input');
 const imgBase = document.getElementById('img-base');
 let images = document.querySelectorAll('.img-wrapper > img');
 let currentView = 0;
+let finalPrice = 2167000;
+
+function updatePrice() {
+  document.getElementById('final-price').innerHTML = finalPrice + ' Ft';
+}
+
+updatePrice();
 
 function toggleDropdown(wrapperID) {
   const menu = document.getElementById(wrapperID);
@@ -76,12 +83,16 @@ function switchView(toNext) {
   });
 }
 
-function showElement(id) {
+function showElement(id, elem) {
   const element = document.getElementById(id);
   if (element.style.visibility == 'hidden') {
     element.style.visibility = 'initial';
+    finalPrice += elem.getAttribute('data-price');
+    updatePrice();
   } else {
     element.style.visibility = 'hidden';
+    finalPrice += elem.getAttribute('data-price');
+    updatePrice();
   }
 }
 
