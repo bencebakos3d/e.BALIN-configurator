@@ -87,11 +87,11 @@ function showElement(id, elem) {
   const element = document.getElementById(id);
   if (element.style.visibility == 'hidden') {
     element.style.visibility = 'initial';
-    finalPrice += elem.getAttribute('data-price');
+    finalPrice += parseInt(elem.getAttribute('data-price'));
     updatePrice();
   } else {
     element.style.visibility = 'hidden';
-    finalPrice += elem.getAttribute('data-price');
+    finalPrice -= parseInt(elem.getAttribute('data-price'));
     updatePrice();
   }
 }
