@@ -127,9 +127,12 @@ function selectOnlyThis(name) {
   for (let i = 0; i < chks.length; i++) {
     chks[i].onclick = function () {
       if (this.checked) {
+        finalPrice += parseInt(this.getAttribute('data-price'));
+        updatePrice();
         document.getElementById(this.id).style.visibility = 'initial';
-        console.log('this is checked');
       } else {
+        finalPrice -= parseInt(this.getAttribute('data-price'));
+        updatePrice();
         for (let k = 0; k < chks.length; k++) {
           document.getElementById(chks[k].id).style.visibility = 'hidden';
         }
@@ -137,6 +140,8 @@ function selectOnlyThis(name) {
       for (let j = 0; j < chks.length; j++) {
         if (chks[j] != this && this.checked) {
           chks[j].checked = false;
+          finalPrice -= parseInt(chks[j].getAttribute('data-price'));
+          updatePrice();
           document.getElementById(chks[j].id).style.visibility = 'hidden';
         }
       }
