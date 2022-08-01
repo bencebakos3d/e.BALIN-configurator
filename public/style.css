@@ -289,14 +289,19 @@ body {
   }
   .configurator-left {
     width: 100%;
+    height: 35vh;
   }
   .configurator-right {
     width: 100%;
+    height: 65vh;
   }
   .img-btn {
     display: none;
   }
   .button-wrapper {
     width: 50%;
+  }
+  .img-wrapper > img {
+    object-fit: cover;
   }
 }
