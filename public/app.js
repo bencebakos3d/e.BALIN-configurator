@@ -44,7 +44,7 @@ let currentView = 0;
 let finalPrice = 2167000;
 
 function updatePrice() {
-  document.getElementById('final-price').innerHTML = finalPrice + ' Ft';
+  document.getElementById('final-price').innerHTML = finalPrice.toString().slice(0, -6) + ' ' + finalPrice.toString().slice(1, -3) + ' ' + finalPrice.toString().slice(-3) + ' Ft';
 }
 
 updatePrice();
@@ -57,7 +57,7 @@ function toggleDropdown(wrapperID) {
     icon.style.transform = 'none';
   } else {
     menu.style.display = 'none';
-    icon.style.transform = 'rotate(180deg)';
+    icon.style.transform = 'rotate(-180deg)';
   }
 }
 
@@ -96,6 +96,16 @@ function showElement(id, elem) {
   }
 }
 
+function addPrice(elem) {
+  if (elem.checked) {
+    finalPrice += parseInt(elem.getAttribute('data-price'));
+    updatePrice();
+  } else {
+    finalPrice -= parseInt(elem.getAttribute('data-price'));
+    updatePrice();
+  }
+}
+
 for (let i = 0; i < imageList.length; i++) {
   let img = new Image();
   img.src = `data/${imageList[i]}`;
@@ -111,19 +121,12 @@ Promise.all(
       img.addEventListener('error', () => resolve(false));
     });
   })
-).then((results) => {
-  if (results.every((res) => res)) {
-    loadingScreen.style.opacity = '0';
-    setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
-  } else {
-    loadingScreen.style.opacity = '0';
-    setTimeout((loadingScreen.style.visibility = 'hidden'), 10);
-  }
+).then(() => {
+  loadingScreen.style.visibility = 'hidden';
 });
 
 function selectOnlyThis(name) {
   let chks = document.getElementsByName(name);
-  console.log(chks);
   for (let i = 0; i < chks.length; i++) {
     chks[i].onclick = function () {
       if (this.checked) {
