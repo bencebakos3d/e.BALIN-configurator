@@ -20,6 +20,8 @@
           <img id="img-base" src="data/body_0000.png" style="z-index: 0" />
           <img id="upholstery-beige" src="data/upholstery_beige_0000.png" style="z-index: 1; visibility: hidden" />
           <img id="upholstery-blue" src="data/upholstery_blue_0000.png" style="z-index: 1; visibility: hidden" />
+          <img id="backrest-blue" src="data/backrest_blue_0000.png" style="z-index: 1; visibility: hidden" />
+          <img id="backrest-beige" src="data/backrest_beige_0000.png" style="z-index: 1; visibility: hidden" />
           <img id="guard" src="data/guard_0000.png" style="z-index: 2; visibility: hidden" />
           <img id="bimini" src="data/bimini_0000.png" style="z-index: 3; visibility: hidden" />
           <img id="noseguard" src="data/noseguard_0000.png" style="z-index: 4; visibility: hidden" />
@@ -67,6 +69,13 @@
                 <span>Hátsó korlát</span>
               </div>
               <span>182 000 Ft</span>
+            </div>
+            <div class="option">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="backrest-input" onchange="showElement('backrest-blue', this)" data-price="142000" />
+                <span>Háttámla</span>
+              </div>
+              <span>142 000 Ft</span>
             </div>
             <div class="option">
               <div class="checkbox-wrapper">
@@ -307,13 +316,6 @@
             </div>
             <div class="option">
               <div class="checkbox-wrapper">
-                <input type="checkbox" onchange="addPrice(this)" data-price="19500" />
-                <span>Vonófej sólyakocsihoz</span>
-              </div>
-              <span>19 500 Ft</span>
-            </div>
-            <div class="option">
-              <div class="checkbox-wrapper">
                 <input type="checkbox" onchange="addPrice(this)" data-price="105000" />
                 <span>Sólyakocsi 2 bolygóval</span>
               </div>
@@ -326,6 +328,7 @@
               </div>
               <span>170 000 Ft</span>
             </div>
+            <br />
           </div>
         </div>
       </div>

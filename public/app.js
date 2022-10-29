@@ -102,11 +102,17 @@ function selectOnlyThis(name) {
       updatePrice();
 
       if (this.checked) {
+        if (document.getElementById('backrest-input').checked && this.id.includes('beige')) {
+          document.getElementById('backrest-beige').style.visibility = 'initial';
+        } else {
+          document.getElementById('backrest-beige').style.visibility = 'hidden';
+        }
         document.getElementById(this.id).style.visibility = 'initial';
       } else {
         finalPrice -= parseInt(this.getAttribute('data-price'));
         addedPrice = false;
         updatePrice();
+        document.getElementById('backrest-beige').style.visibility = 'hidden';
         for (let k = 0; k < chks.length; k++) {
           document.getElementById(chks[k].id).style.visibility = 'hidden';
         }
@@ -120,5 +126,16 @@ function selectOnlyThis(name) {
     };
   }
 }
+
+const backrestInput = document.getElementById('backrest-input');
+backrestInput.onclick = function () {
+  if (!document.getElementById('backrest-input').checked) {
+    document.getElementById('backrest-beige').style.visibility = 'hidden';
+  }
+  if (document.getElementById('backrest-input').checked && document.querySelector('.upholstery-beige').checked) {
+    console.log('helloooo checked');
+    document.getElementById('backrest-beige').style.visibility = 'initial';
+  }
+};
 
 selectOnlyThis('checkbox-upholstery');
