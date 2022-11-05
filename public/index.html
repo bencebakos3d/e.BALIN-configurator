@@ -26,7 +26,7 @@
           <img id="bimini" src="data/tura/bimini_0000.png" style="z-index: 3; visibility: hidden" />
           <img id="noseguard" src="data/tura/noseguard_0000.png" style="z-index: 4; visibility: hidden" />
           <img id="dorzslec" src="data/tura/dorzslec_0000.png" style="z-index: 1; visibility: hidden" />
-          <img id="kikotokarika" src="data/tura/kikotokarika_0000.png" style="z-index: 5; visibility: hidden" />
+          <img id="edgeguard" src="data/tura/edgeguard_0000.png" style="z-index: 5; visibility: hidden" />
           <img id="kikotobika" src="data/tura/kikotobika_0000.png" style="z-index: 6; visibility: hidden" />
           <img id="ladder" src="data/tura/ladder_0000.png" style="z-index: 6; visibility: hidden" />
           <img id="antialgae" src="data/tura/antialgae_0000.png" style="z-index: 1; visibility: hidden" />
@@ -86,7 +86,7 @@
             </div>
             <div class="option">
               <div class="checkbox-wrapper">
-                <input type="checkbox" id="kikotokarika-input" onchange="showElement('kikotokarika', this)" data-price="33000" />
+                <input type="checkbox" id="edgeguard-input" onchange="showElement('edgeguard', this)" data-price="33000" />
                 <span>Orrél védő</span>
               </div>
               <span>33 000 Ft</span>
@@ -335,7 +335,7 @@
     </div>
     <script src="app.js"></script>
     <script>
-      const imageList = ['antialgae_0000.png', 'bimini_0000.png', 'body_0000.png', 'cupholders_0000.png', 'dorzslec_0000.png', 'guard_0000.png', 'kikotobika_0000.png', 'kikotokarika_0000.png', 'ladder_0000.png', 'noseguard_0000.png', 'upholstery_beige_0000.png', 'upholstery_blue_0000.png'];
+      const imageList = ['anchorring_0000.png', 'antialgae_0000.png', 'bimini_0000.png', 'body_0000.png', 'backrest_beige_0000.png', 'backrest_blue_0000.png', 'cupholders_0000.png', 'dorzslec_0000.png', 'edgeguard_0000.png', 'guard_0000.png', 'kikotobika_0000.png', 'ladder_0000.png', 'noseguard_0000.png', 'upholstery_beige_0000.png', 'upholstery_blue_0000.png', 'ladder_0000.png'];
       for (let i = 0; i < imageList.length; i++) {
         let img = new Image();
         img.src = `data/tura/${imageList[i]}`;
