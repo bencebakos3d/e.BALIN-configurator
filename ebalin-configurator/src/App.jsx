@@ -1,4 +1,4 @@
-import './styles/App.css'
+import mainstyle from './styles/app.module.css'
 import Boat from './boat.jsx'
 import  OptionsMenu from './options_menu.jsx'
 
@@ -6,7 +6,7 @@ import  OptionsMenu from './options_menu.jsx'
 function App() {
 
   return (
-    <div id="view_container">
+    <div className={mainstyle.view_container}>
       <Boat></Boat>
       <OptionsMenu></OptionsMenu>
     </div>
