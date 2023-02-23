@@ -7,8 +7,23 @@ function NavBar(){
             <div className={styles.nav_button}>
                 <img src="./placeholder.jpg" alt="" />
             </div>
+
+            <div className={styles.nav_button}>
+                <img src="./placeholder.jpg" alt="" />
+            </div>
+
+            <div className={styles.nav_button}>
+                <img src="./placeholder.jpg" alt="" />
+            </div>
+
+            <div className={styles.nav_button}>
+                <img src="./placeholder.jpg" alt="" />
+            </div>
+
+            <div className={styles.nav_button}>
+                <img src="./placeholder.jpg" alt="" />
+            </div>
         </div>
-        
     );
 }
 
