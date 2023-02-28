@@ -64,8 +64,14 @@ export default function ConfigurationPanel() {
       <div className={styles.main_frame}>
         <div className={styles.title_bar}>Meg kell irni a Scriptet</div>
         <div className={styles.entry_frame}>
+          <div className={styles.arrow_button}>
+            <img src="" alt="" />
+          </div>
           <div className={styles.content_zone}>
-            asd
+            IDE MAJD AZ ENTRY KOMPONENS JÖN
+          </div>
+          <div className={styles.arrow_button}>
+            <img src="{} "alt="" />
           </div>
         </div>
         <div className={styles.page_footer}>FOter</div>
