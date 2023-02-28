@@ -5,6 +5,8 @@ import carpet from './icons/karpit_icon.png';
 import electronics from './icons/elektronika_icon.png';
 import accessories from './icons/kiegeszitok_icon.png';
 import storage from './icons/tarolas_icon.png';
+import arrow_left from './icons/arrow_left_icon.png';
+import arrow_right from './icons/arrow_right_icon.png';
 
 function NavBar() {
   return (
@@ -65,16 +67,20 @@ export default function ConfigurationPanel() {
         <div className={styles.title_bar}>Meg kell irni a Scriptet</div>
         <div className={styles.entry_frame}>
           <div className={styles.arrow_button}>
-            <img src="" alt="" />
+            <img src={arrow_left} className={styles.arrow_image} alt="" />
           </div>
           <div className={styles.content_zone}>
             IDE MAJD AZ ENTRY KOMPONENS JÖN
           </div>
           <div className={styles.arrow_button}>
-            <img src="{} "alt="" />
+            <img className={styles.arrow_image} src={arrow_right} alt="" />
           </div>
         </div>
-        <div className={styles.page_footer}>FOter</div>
+        <div className={styles.page_footer}>
+          <div className={styles.round_index}></div>
+          <div className={styles.round_index}></div>
+          <div className={styles.round_index}></div>
+        </div>
       </div>
     </div>
   );

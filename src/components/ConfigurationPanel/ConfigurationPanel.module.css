@@ -64,24 +64,48 @@
     text-align: center;
     width: 100%;
     height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .entry_frame{
     width: 100%;
     height: calc(100% - 90px);
     background-color:  cyan;
+    display: flex;
+    flex-direction: row;
 }
 
 .content_zone{
     background-color: pink;
-}
-
-.content_zone{
-
+    width: calc(100% - 60px);
 }
 
 .main_frame{
     height: calc(100% - 70px);
     width: 100%;
     box-sizing: border-box;
+}
+
+.arrow_button{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_image{
+    height: 67px;
+    width: 100%;
+}
+
+.round_index{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
 }
