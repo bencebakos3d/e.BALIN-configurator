@@ -64,7 +64,10 @@ export default function ConfigurationPanel() {
     <div className={styles.menu_container}>
       <NavBar></NavBar>
       <div className={styles.main_frame}>
-        <div className={styles.title_bar}>Meg kell irni a Scriptet</div>
+        <div className={styles.title_bar}>
+          Meg kell irni a Scriptet
+          <div className={styles.border_line}></div>
+          </div>
         <div className={styles.entry_frame}>
           <div className={styles.arrow_button}>
             <img src={arrow_left} className={styles.arrow_image} alt="" />
