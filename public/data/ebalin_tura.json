@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Bimini",
+    "details": "Nap és szélvédő. 145 x 190 x 110 cm",
+    "price": 59000,
+    "image": "bimini.jpg",
+    "ID": "30T"
+  },
+  {
+    "title": "Orr korlát",
+    "details": "Rozsdamentes acél",
+    "price": 182000,
+    "image": "orrkorlat.jpg",
+    "ID": "9T"
+  }
+]
