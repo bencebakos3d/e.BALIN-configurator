@@ -7,6 +7,8 @@ import accessories from './icons/kiegeszitok_icon.png';
 import storage from './icons/tarolas_icon.png';
 import arrow_left from './icons/arrow_left_icon.png';
 import arrow_right from './icons/arrow_right_icon.png';
+import bimini from './icons/bimini.png'
+import checked_icon from './icons/checked_icon.png'
 
 function NavBar() {
   return (
@@ -59,6 +61,28 @@ function NavBar() {
   );
 }
 
+function Entry(){
+  return(
+    <div className={styles.entry_mainframe}>
+      <div className={styles.checkbox_container}>
+        <div className={styles.entry_checkbox}>
+          <img src={checked_icon} className={styles.check_image} alt="" />
+        </div>
+      </div>
+      <div className={styles.text_pair}>
+        <div className={styles.entry_title}>
+          Bimini
+        </div>
+        <div>
+          Ideális nap és egyéb időjárási körülmények ellen.
+        </div>
+      </div>
+      <div className={styles.image_container}>
+        <img src={bimini} className={styles.entry_image} alt="" />
+      </div>
+    </div>
+  );
+}
 export default function ConfigurationPanel() {
   return (
     <div className={styles.menu_container}>
@@ -73,13 +97,16 @@ export default function ConfigurationPanel() {
             <img src={arrow_left} className={styles.arrow_image} alt="" />
           </div>
           <div className={styles.content_zone}>
-            IDE MAJD AZ ENTRY KOMPONENS JÖN
+            <Entry></Entry>
           </div>
           <div className={styles.arrow_button}>
             <img className={styles.arrow_image} src={arrow_right} alt="" />
           </div>
         </div>
         <div className={styles.page_footer}>
+          <div className={styles.round_index}></div>
+          <div className={styles.round_index}></div>
+          <div className={styles.round_index}></div>
           <div className={styles.round_index}></div>
           <div className={styles.round_index}></div>
           <div className={styles.round_index}></div>
