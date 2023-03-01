@@ -2,3 +2,43 @@
   width: 60vw;
   background-color: #FFFFFF;
 }
+
+.metadata_panel{
+  position: relative;
+  color: #42474F;
+}
+
+.boat_name{
+  position: absolute;
+  top: 80vh;
+
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 700;
+  font-family: 'Arial';
+  font-style: normal;
+  color: #42474F;
+  box-sizing: border-box;
+
+  width: 406px;
+  height: 49px;
+
+  text-align: left;
+}
+
+.boat_metadata{
+  position: absolute;
+  top: 80vh;
+  left: 40vw;
+  box-sizing: border-box;
+  text-align: right;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  width: 269px;
+  height: 97px;
+}

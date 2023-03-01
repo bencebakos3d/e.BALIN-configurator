@@ -13,6 +13,14 @@ function Model({ url }) {
 export default function BoatDisplay() {
   return (
     <div className={styles.boat_display}>
+      <div className={styles.metadata_panel}>
+          <div className={styles.boat_name}>
+            Ebalin Túra
+          </div>
+          <div className={styles.boat_metadata}>
+            Végösszeg: <br/>1 565 000 Ft <br />+ ÁFA
+          </div>
+      </div>
       <Canvas camera={{ fov: 45, position: [2, 2, -5] }}>
         <group>
           <Model url={BoatModel.url} />
