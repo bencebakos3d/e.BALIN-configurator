@@ -1,27 +1,59 @@
 [
-  {
-    "title": "Bimini",
-    "category":"body",
-    "details": "Nap és szélvédő. 145 x 190 x 110 cm",
-    "price": 59000,
-    "image": "bimini.jpg",
-    "ID": "30T"
-  },
-  {
-    "title": "Orr korlát",
-    "category":"body",
-    "details": "Rozsdamentes acél",
-    "price": 182000,
-    "image": "orrkorlat.jpg",
-    "ID": "9T"
-  },
-
-  {
-    "title": "Valami",
-    "category":"electronics",
-    "details": "Ez egy teszt felirat",
-    "price": 0,
-    "image": "orrkorlat.jpg",
-    "ID": "100T"
-  }
+  [
+    {
+      "title": "Bimini",
+      "category": "body",
+      "details": "Nap és szélvédő. 145 x 190 x 110 cm",
+      "price": 59000,
+      "image": "data/bimini.png",
+      "ID": "30T"
+    },
+    {
+      "title": "Orr korlát",
+      "category": "body",
+      "details": "Rozsdamentes acél",
+      "price": 182000,
+      "image": "orrkorlat.jpg",
+      "ID": "9T"
+    },
+    {
+      "title": "Hátsó korlát",
+      "category": "body",
+      "details": "Rozsdamentes acél",
+      "price": 182000,
+      "image": "hatsokorlat.jpg",
+      "ID": "11T"
+    },
+    {
+      "title": "Háttámla",
+      "category": "body",
+      "details": "Rozsdamentes acél háttámla vezetőüléshez",
+      "price": 142000,
+      "image": "hattamla.jpg",
+      "ID": "8T"
+    },
+    {
+      "title": "Dörzsléc",
+      "category": "body",
+      "details": "Műanyag",
+      "price": 49500,
+      "ID": "4T"
+    },
+    {
+      "title": "Orrél védő",
+      "category": "body",
+      "details": "Rozsdamentes acél",
+      "price": 33000,
+      "ID": "10T"
+    }
+  ],
+  [
+    {
+      "title": "Kárpit",
+      "category": "body",
+      "details": "Műanyag",
+      "price": 49500,
+      "ID": "4T"
+    }
+  ]
 ]
