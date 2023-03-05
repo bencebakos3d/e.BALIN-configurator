@@ -13,14 +13,6 @@ function Model({ url }) {
 export default function BoatDisplay() {
   return (
     <div className={styles.boat_display}>
-      <div className={styles.metadata_panel}>
-          <div className={styles.boat_name}>
-            Ebalin Túra
-          </div>
-          <div className={styles.boat_metadata}>
-            Végösszeg: <br/>1 565 000 Ft <br />+ ÁFA
-          </div>
-      </div>
       <Canvas camera={{ fov: 45, position: [2, 2, -5] }}>
         <group>
           <Model url={BoatModel.url} />
@@ -28,6 +20,12 @@ export default function BoatDisplay() {
         <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} enableDamping={false} />
         <Environment files="./env/kloppenheim_05_puresky_1k.hdr" />
       </Canvas>
+      <div className={styles.metadata_panel}>
+        <div className={styles.boat_name}>e.Balin Túra</div>
+        <div className={styles.boat_metadata}>
+          Végösszeg: <br />1 565 000 Ft <br />+ ÁFA
+        </div>
+      </div>
     </div>
   );
 }

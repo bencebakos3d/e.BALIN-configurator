@@ -1,44 +1,31 @@
 .boat_display {
   width: 60vw;
-  background-color: #FFFFFF;
-}
-
-.metadata_panel{
+  background-color: #ffffff;
   position: relative;
-  color: #42474F;
 }
 
-.boat_name{
+.metadata_panel {
   position: absolute;
-  top: 80vh;
+  color: #42474f;
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.boat_name {
   font-size: 48px;
-  line-height: 55px;
   font-weight: 700;
   font-family: 'Arial';
-  font-style: normal;
-  color: #42474F;
-  box-sizing: border-box;
-
-  width: 406px;
-  height: 49px;
-
-  text-align: left;
+  margin-left: 50px;
 }
 
-.boat_metadata{
-  position: absolute;
-  top: 80vh;
-  left: 40vw;
+.boat_metadata {
   box-sizing: border-box;
   text-align: right;
-
   font-family: 'Arial';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-
-  width: 269px;
-  height: 97px;
+  margin-right: 50px;
 }
