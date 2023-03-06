@@ -1,7 +1,7 @@
 import styles from './Option.module.css';
 import checked_icon from './checked_icon.png';
 
-export default function Option({ handleCheck, title, description, image, ID }) {
+export default function Option({ handleCheck, title, description, image }) {
   return (
     <div className={styles.entry_mainframe}>
       <div className={styles.checkbox_container}>

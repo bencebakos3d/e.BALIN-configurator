@@ -8,9 +8,9 @@ import storage from './icons/tarolas_icon.png';
 import arrow_left from './icons/arrow_left_icon.png';
 import arrow_right from './icons/arrow_right_icon.png';
 import entryData from './icons/ebalin_tura.json';
-import { toggleBimini } from '../../optionsSlice';
+import { toggleBimini, increaseCost, decreaseCost } from '../../optionsSlice';
 import Option from '../Option/Option';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function NavBar(handler) {
   return (
@@ -71,6 +71,11 @@ export default function ConfigurationPanel() {
     }
   }
 
+  function handleCheck(price) {
+    dispatch(toggleBimini());
+    dispatch(increaseCost(price));
+  }
+
   useEffect(() => {
     setData(entryData[pageIndex]);
   });
@@ -90,7 +95,7 @@ export default function ConfigurationPanel() {
           </div>
           <div className={styles.content_zone}>
             {data.map((item, i) => (
-              <Option title={item.title} description={item.details} key={i} handleCheck={() => dispatch(toggleBimini())} />
+              <Option title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price)} />
             ))}
           </div>
           <div className={styles.arrow_button} onClick={() => increasePage()}>
