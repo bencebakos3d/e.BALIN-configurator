@@ -8,8 +8,9 @@ import storage from './icons/tarolas_icon.png';
 import arrow_left from './icons/arrow_left_icon.png';
 import arrow_right from './icons/arrow_right_icon.png';
 import entryData from './icons/ebalin_tura.json';
-
+import { toggleBimini } from '../../optionsSlice';
 import Option from '../Option/Option';
+import { useDispatch } from 'react-redux';
 
 function NavBar(handler) {
   return (
@@ -52,21 +53,10 @@ function NavBar(handler) {
   );
 }
 
-// function generateMainPage(category_name) {
-//   let filtered = new Array();
-
-//   for (let element of entry_data) {
-//     if (element.category == category_name) {
-//       filtered.push(element);
-//     }
-//   }
-
-//   return filtered.map((element, key) => <Entry dataRef={element} id={key} />);
-// }
-
 export default function ConfigurationPanel() {
   const [pageIndex, setPageIndex] = useState(0);
   const [data, setData] = useState(entryData);
+  const dispatch = useDispatch();
 
   function decreasePage() {
     console.log('decreasing page');
@@ -100,7 +90,7 @@ export default function ConfigurationPanel() {
           </div>
           <div className={styles.content_zone}>
             {data.map((item, i) => (
-              <Option title={item.title} description={item.details} key={i} />
+              <Option title={item.title} description={item.details} key={i} handleCheck={() => dispatch(toggleBimini())} />
             ))}
           </div>
           <div className={styles.arrow_button} onClick={() => increasePage()}>

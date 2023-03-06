@@ -6,7 +6,7 @@
       "details": "Nap és szélvédő. 145 x 190 x 110 cm",
       "price": 59000,
       "image": "data/bimini.png",
-      "ID": "30T"
+      "ID": "bimini"
     },
     {
       "title": "Orr korlát",
@@ -14,7 +14,7 @@
       "details": "Rozsdamentes acél",
       "price": 182000,
       "image": "orrkorlat.jpg",
-      "ID": "9T"
+      "ID": "orrkorlat"
     },
     {
       "title": "Hátsó korlát",
@@ -22,7 +22,7 @@
       "details": "Rozsdamentes acél",
       "price": 182000,
       "image": "hatsokorlat.jpg",
-      "ID": "11T"
+      "ID": "hatsokorlat"
     },
     {
       "title": "Háttámla",
@@ -30,21 +30,21 @@
       "details": "Rozsdamentes acél háttámla vezetőüléshez",
       "price": 142000,
       "image": "hattamla.jpg",
-      "ID": "8T"
+      "ID": "hattamla"
     },
     {
       "title": "Dörzsléc",
       "category": "body",
       "details": "Műanyag",
       "price": 49500,
-      "ID": "4T"
+      "ID": "dorzslec"
     },
     {
       "title": "Orrél védő",
       "category": "body",
       "details": "Rozsdamentes acél",
       "price": 33000,
-      "ID": "10T"
+      "ID": "orrelvedo"
     }
   ],
   [
