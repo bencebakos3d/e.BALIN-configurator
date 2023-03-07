@@ -9,8 +9,8 @@ import arrow_left from './icons/arrow_left_icon.png';
 import arrow_right from './icons/arrow_right_icon.png';
 import entryData from './icons/ebalin_tura.json';
 import { toggleBimini, increaseCost, decreaseCost } from '../../optionsSlice';
-import Option from '../Option/Option';
 import { useDispatch, useSelector } from 'react-redux';
+import Entry from '../Entry/Entry';
 
 function NavBar(handler) {
   return (
@@ -95,7 +95,7 @@ export default function ConfigurationPanel() {
           </div>
           <div className={styles.content_zone}>
             {data.map((item, i) => (
-              <Option title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price)} />
+              <Entry title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price)} />
             ))}
           </div>
           <div className={styles.arrow_button} onClick={() => increasePage()}>
