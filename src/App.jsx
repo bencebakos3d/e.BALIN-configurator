@@ -7,7 +7,6 @@ function App() {
     <div className="view_container">
       <BoatDisplay></BoatDisplay>
       <ConfigurationPanel></ConfigurationPanel>
-      <img src="images/bottom_gradient.png" className="bottom-gradient" />
     </div>
   );
 }

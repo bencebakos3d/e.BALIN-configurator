@@ -5,6 +5,8 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useLoader } from '@react-three/fiber';
 import React, { useRef, useState, useReducer, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Bloom, BrightnessContrast, EffectComposer, HueSaturation } from '@react-three/postprocessing';
+import { BlendFunction } from 'postprocessing';
 // import { toggleBimini } from '../../optionsSlice';
 
 function Model() {
@@ -119,6 +121,10 @@ export default function BoatDisplay() {
         </group>
         <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} enableDamping={false} />
         <Environment files="./env/kloppenheim_05_puresky_1k.hdr" />
+        <EffectComposer>
+          <HueSaturation hue={0} saturation={-0.2} />
+          <BrightnessContrast contrast={0.1} />
+        </EffectComposer>
       </Canvas>
       <div className={styles.metadata_panel}>
         <div className={styles.boat_name}>e.Balin Túra</div>

@@ -2,7 +2,6 @@
   [
     {
       "title": "Bimini",
-      "category": "body",
       "details": "Nap és szélvédő. 145 x 190 x 110 cm",
       "price": 59000,
       "image": "data/bimini.png",
@@ -10,7 +9,6 @@
     },
     {
       "title": "Orr korlát",
-      "category": "body",
       "details": "Rozsdamentes acél",
       "price": 182000,
       "image": "orrkorlat.jpg",
@@ -18,7 +16,6 @@
     },
     {
       "title": "Hátsó korlát",
-      "category": "body",
       "details": "Rozsdamentes acél",
       "price": 182000,
       "image": "hatsokorlat.jpg",
@@ -26,7 +23,6 @@
     },
     {
       "title": "Háttámla",
-      "category": "body",
       "details": "Rozsdamentes acél háttámla vezetőüléshez",
       "price": 142000,
       "image": "hattamla.jpg",
@@ -34,25 +30,58 @@
     },
     {
       "title": "Dörzsléc",
-      "category": "body",
       "details": "Műanyag",
       "price": 49500,
       "ID": "dorzslec"
     },
     {
       "title": "Orrél védő",
-      "category": "body",
       "details": "Rozsdamentes acél",
       "price": 33000,
       "ID": "orrelvedo"
+    },
+    {
+      "title": "Kikötőkarika",
+      "details": "Rozsdamentes acél, M8-M10",
+      "price": 4500,
+      "ID": "kikotokarika"
+    },
+    {
+      "title": "Kikötőbika",
+      "details": "Rozsdamentes acél, 150mm",
+      "price": 4500,
+      "ID": "kikotokarika"
+    },
+    {
+      "title": "Fürdőlépcső",
+      "details": "Tükörfalra építve",
+      "price": 55500,
+      "ID": "furdolepcso-hatso"
+    },
+    {
+      "title": "Algagátló",
+      "details": "2 réteges algagátlás, VC 17M teflon",
+      "price": 75000,
+      "ID": "furdolepcso-hatso"
+    },
+    {
+      "title": "Italtartó",
+      "details": "Műanyag",
+      "price": 15000,
+      "ID": "furdolepcso-hatso"
     }
   ],
   [
     {
-      "title": "Kárpit",
-      "category": "body",
-      "details": "Műanyag",
-      "price": 49500,
+      "title": "Tengerkék műbőr",
+      "details": "",
+      "price": 93500,
+      "ID": "4T"
+    },
+    {
+      "title": "Beige műbőr",
+      "details": "",
+      "price": 93500,
       "ID": "4T"
     }
   ]

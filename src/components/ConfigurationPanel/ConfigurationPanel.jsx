@@ -5,6 +5,7 @@ import carpet from './icons/karpit_icon.png';
 import electronics from './icons/elektronika_icon.png';
 import accessories from './icons/kiegeszitok_icon.png';
 import storage from './icons/tarolas_icon.png';
+import summary from './icons/osszesites_icon.png';
 import arrow_left from './icons/arrow_left_icon.png';
 import arrow_right from './icons/arrow_right_icon.png';
 import entryData from './icons/ebalin_tura.json';
@@ -49,6 +50,13 @@ function NavBar(handler) {
         </div>
         <div className={styles.button_label}>Tárolás</div>
       </div>
+
+      <div className={styles.button_parent}>
+        <div className={styles.nav_button} onClick={() => handler.handler('storage')}>
+          <img className={styles.image_sizing} src={summary} alt="" />
+        </div>
+        <div className={styles.button_label}>Összesítés</div>
+      </div>
     </div>
   );
 }
@@ -85,7 +93,7 @@ export default function ConfigurationPanel() {
       <NavBar></NavBar>
       <div className={styles.main_frame}>
         <div className={styles.title_bar}>
-          Meg kell irni a Scriptet
+          <div>Hajótest</div>
           <div className={styles.border_line}></div>
         </div>
 
@@ -104,11 +112,12 @@ export default function ConfigurationPanel() {
         </div>
 
         <div className={styles.page_footer}>
-          <div className={styles.round_index} onClick={() => switchPage('body')}></div>
-          <div className={styles.round_index} onClick={() => switchPage('carpet')}></div>
-          <div className={styles.round_index} onClick={() => switchPage('electronics')}></div>
-          <div className={styles.round_index} onClick={() => switchPage('accessories')}></div>
-          <div className={styles.round_index} onClick={() => switchPage('storage')}></div>
+          <div className={styles.round_index} onClick={() => setPageIndex(0)}></div>
+          <div className={styles.round_index} onClick={() => setPageIndex(1)}></div>
+          <div className={styles.round_index} onClick={() => setPageIndex(2)}></div>
+          <div className={styles.round_index} onClick={() => setPageIndex(3)}></div>
+          <div className={styles.round_index} onClick={() => setPageIndex(4)}></div>
+          <div className={styles.round_index} onClick={() => setPageIndex(5)}></div>
         </div>
       </div>
     </div>
