@@ -29,7 +29,7 @@ function Model() {
 
   return (
     <group dispose={null}>
-      <mesh geometry={nodes.Algagatlo.geometry} material={materials.Algavedo} position={[0, 0.58, 0]} />
+      <mesh geometry={nodes.Algagatlo.geometry} material={materials.Algavedo} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.algagatlo)} />
       <group position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.bimini)}>
         <mesh geometry={nodes.Mesh006.geometry} material={materials.Biminiplastic2} />
         <mesh geometry={nodes.Mesh006_1.geometry} material={materials.Rail_metallic} />
@@ -37,30 +37,30 @@ function Model() {
         <mesh geometry={nodes.Mesh006_3.geometry} material={materials.Kotel} />
         <mesh geometry={nodes.Mesh006_4.geometry} material={materials.Bimini_Top} />
       </group>
-      <group position={[0, 0.58, 0.02]}>
+      <group position={[0, 0.58, 0.02]} visible={useSelector((state) => state.boat.dorzslec)}>
         <mesh geometry={nodes.Cube007.geometry} material={materials.Rail_metallic} />
         <mesh geometry={nodes.Cube007_1.geometry} material={materials.BlackPlastic} />
       </group>
-      <mesh geometry={nodes.El_vedo.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
-      <group position={[0.17, 0.48, 0.67]} rotation={[-3.11, -0.44, 2.91]}>
+      <mesh geometry={nodes.El_vedo.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.orrelvedo)} />
+      <group position={[0.17, 0.48, 0.67]} rotation={[-3.11, -0.44, 2.91]} visible={useSelector((state) => state.boat.italtarto)}>
         <mesh geometry={nodes.Mesh022.geometry} material={materials.Beercan_green} />
         <mesh geometry={nodes.Mesh022_1.geometry} material={materials.Beercan_top} />
         <mesh geometry={nodes.Mesh022_2.geometry} material={materials.BlackPlastic} />
       </group>
-      <mesh geometry={nodes.Karpit_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={false} />
-      <mesh geometry={nodes.Karpit_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Karpit_korlat_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} />
-      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} />
-      <mesh geometry={nodes.Kikotobika.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Kikotokarika.geometry} material={materials.Rail_metallic} position={[2, 0.39, -0.02]} rotation={[-Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.Korlat_hatso.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Korlat_orr.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
-      <group position={[0.27, 0.66, -0.19]} rotation={[3.09, -0.05, 3.14]}>
+      <mesh geometry={nodes.Karpit_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitbeige)} />
+      <mesh geometry={nodes.Karpit_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitkek)} />
+      <mesh geometry={nodes.Karpit_korlat_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitKorlatBeige)} />
+      <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} visible={useSelector((state) => state.boat.karpitKorlatKek)} />
+      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} visible={useSelector((state) => state.boat.elsolepcso)} />
+      <mesh geometry={nodes.Kikotobika.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.kikotobika)} />
+      <mesh geometry={nodes.Kikotokarika.geometry} material={materials.Rail_metallic} position={[2, 0.39, -0.02]} rotation={[-Math.PI / 2, 0, 0]} visible={useSelector((state) => state.boat.kikotokarika)} />
+      <mesh geometry={nodes.Korlat_hatso.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.hatsokorlat)} />
+      <mesh geometry={nodes.Korlat_orr.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.orrkorlat)} />
+      <group position={[0.27, 0.66, -0.19]} rotation={[3.09, -0.05, 3.14]} visible={useSelector((state) => state.boat.elsolepcso)}>
         <mesh geometry={nodes.Mesh024.geometry} material={materials.Rail_metallic} />
         <mesh geometry={nodes.Mesh024_1.geometry} material={materials.White_plastic} />
       </group>
-      <group position={[0, 0.58, 0]}>
+      <group position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.hatsolepcso)}>
         <mesh geometry={nodes.Mesh018.geometry} material={materials.Rail_metallic} />
         <mesh geometry={nodes.Mesh018_1.geometry} material={materials.White_plastic} />
       </group>
@@ -105,7 +105,7 @@ function Model() {
         <mesh geometry={nodes.Mesh054_2.geometry} material={materials.Mavimarelogo} />
       </group>
       <mesh geometry={nodes.Storage_lock.geometry} material={materials.WhitePlastic} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Box004.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
+      <mesh geometry={nodes.Box004.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.hattamla)} />
     </group>
   );
 }
@@ -122,7 +122,7 @@ export default function BoatDisplay() {
         <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} dampingFactor={0.15} />
         <Environment files="./env/kloppenheim_05_puresky_1k.hdr" />
         <EffectComposer>
-          <HueSaturation hue={0} saturation={-0.2} />
+          <HueSaturation hue={0} saturation={-0.4} />
           <BrightnessContrast contrast={0.1} />
         </EffectComposer>
       </Canvas>

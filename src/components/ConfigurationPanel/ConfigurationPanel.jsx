@@ -9,7 +9,7 @@ import summary from './icons/osszesites_icon.png';
 import arrow_left from './icons/arrow_left_icon.png';
 import arrow_right from './icons/arrow_right_icon.png';
 import entryData from './icons/ebalin_tura.json';
-import { toggleBimini, increaseCost, decreaseCost } from '../../optionsSlice';
+import { toggleOption, increaseCost, decreaseCost } from '../../optionsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Entry from '../Entry/Entry';
 
@@ -79,8 +79,8 @@ export default function ConfigurationPanel() {
     }
   }
 
-  function handleCheck(price) {
-    dispatch(toggleBimini());
+  function handleCheck(price, model) {
+    dispatch(toggleOption(model));
     dispatch(increaseCost(price));
   }
 
@@ -104,7 +104,7 @@ export default function ConfigurationPanel() {
           <div className={styles.content_zone_wrapper}>
             <div className={styles.content_zone}>
               {data.map((item, i) => (
-                <Entry title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price)} image={item.image} />
+                <Entry title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price, item.ID)} image={item.image} />
               ))}
             </div>
           </div>

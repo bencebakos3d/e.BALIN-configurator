@@ -5,7 +5,7 @@
       "details": "Ideális nap és egyéb időjárási körülmények ellen. 145 x 190 x 110 cm",
       "price": 59000,
       "image": "data/bimini.webp",
-      "ID": "Bimini"
+      "ID": "bimini"
     },
     {
       "title": "Orr korlát",
@@ -53,14 +53,14 @@
       "details": "Segítségével a hajó biztonságosan és stabilan rögzíthető a kikötés során. Rozsdamentes acél, 150mm.",
       "price": 4500,
       "image": "data/kikotobika.webp",
-      "ID": "kikotokarika"
+      "ID": "kikotobika"
     },
     {
       "title": "Fürdőlépcső",
       "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
       "price": 55500,
       "image": "data/hatsoletra.webp",
-      "ID": "furdolepcso-hatso"
+      "ID": "hatsolepcso"
     },
     {
       "title": "Algagátló",
@@ -74,7 +74,7 @@
       "details": "Praktikus műanyag tartó, amely segít az italok biztonságos szállításában és tárolásában a hajón.",
       "price": 15000,
       "image": "data/italtarto.webp",
-      "ID": "furdolepcso-hatso"
+      "ID": "italtarto"
     }
   ],
   [
