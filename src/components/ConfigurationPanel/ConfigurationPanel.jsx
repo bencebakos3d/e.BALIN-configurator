@@ -115,8 +115,8 @@ export default function ConfigurationPanel() {
         </div>
 
         <div className={styles.page_footer}>
-          <div className={styles.round_index} onClick={() => setPageIndex(0)}></div>
-          <div className={styles.round_index} onClick={() => setPageIndex(1)}></div>
+          <div className={pageIndex === 0 ? styles.round_index_active : styles.round_index} onClick={() => setPageIndex(0)}></div>
+          <div className={pageIndex === 1 ? styles.round_index_active : styles.round_index} onClick={() => setPageIndex(1)}></div>
           <div className={styles.round_index} onClick={() => setPageIndex(2)}></div>
           <div className={styles.round_index} onClick={() => setPageIndex(3)}></div>
           <div className={styles.round_index} onClick={() => setPageIndex(4)}></div>

@@ -120,10 +120,10 @@ export default function BoatDisplay() {
           <Model></Model>
         </group>
         <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} dampingFactor={0.15} />
-        <Environment files="./env/kloppenheim_05_puresky_1k.hdr" />
+        <Environment files="./env/kloppenheim_05_puresky_1k.hdr" preset={'sunset'} />
         <EffectComposer>
           <HueSaturation hue={0} saturation={-0.4} />
-          <BrightnessContrast contrast={0.1} />
+          <BrightnessContrast brightness={-0.03} contrast={-0.02} />
         </EffectComposer>
       </Canvas>
       <div className={styles.metadata_panel}>
