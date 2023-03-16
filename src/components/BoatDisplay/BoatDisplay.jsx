@@ -47,7 +47,7 @@ function Model() {
         <mesh geometry={nodes.Mesh022_1.geometry} material={materials.Beercan_top} />
         <mesh geometry={nodes.Mesh022_2.geometry} material={materials.BlackPlastic} />
       </group>
-      <mesh geometry={nodes.Karpit_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} />
+      <mesh geometry={nodes.Karpit_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={false} />
       <mesh geometry={nodes.Karpit_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Karpit_korlat_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} />
@@ -119,7 +119,7 @@ export default function BoatDisplay() {
         <group>
           <Model></Model>
         </group>
-        <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} enableDamping={false} />
+        <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} dampingFactor={0.15} />
         <Environment files="./env/kloppenheim_05_puresky_1k.hdr" />
         <EffectComposer>
           <HueSaturation hue={0} saturation={-0.2} />

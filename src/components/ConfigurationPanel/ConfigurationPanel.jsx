@@ -99,13 +99,16 @@ export default function ConfigurationPanel() {
 
         <div className={styles.entry_frame}>
           <div className={styles.arrow_button} onClick={() => decreasePage()}>
-            <img src={arrow_left} className={styles.arrow_image} alt="" />
+            {pageIndex !== 0 ? <img src={arrow_left} className={styles.arrow_image} alt="" /> : <div></div>}
           </div>
-          <div className={styles.content_zone}>
-            {data.map((item, i) => (
-              <Entry title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price)} />
-            ))}
+          <div className={styles.content_zone_wrapper}>
+            <div className={styles.content_zone}>
+              {data.map((item, i) => (
+                <Entry title={item.title} description={item.details} key={i} handleCheck={() => handleCheck(item.price)} image={item.image} />
+              ))}
+            </div>
           </div>
+
           <div className={styles.arrow_button} onClick={() => increasePage()}>
             <img className={styles.arrow_image} src={arrow_right} alt="" />
           </div>

@@ -2,72 +2,78 @@
   [
     {
       "title": "Bimini",
-      "details": "Nap és szélvédő. 145 x 190 x 110 cm",
+      "details": "Ideális nap és egyéb időjárási körülmények ellen. 145 x 190 x 110 cm",
       "price": 59000,
-      "image": "data/bimini.png",
+      "image": "data/bimini.webp",
       "ID": "Bimini"
     },
     {
       "title": "Orr korlát",
-      "details": "Rozsdamentes acél",
+      "details": "Rozsdamentes acél korlát a hajó orrában, védi az utasokat a hirtelen mozgásoktól és a hullámoktól.",
       "price": 182000,
-      "image": "orrkorlat.jpg",
+      "image": "data/orrkorlat.webp",
       "ID": "orrkorlat"
     },
     {
       "title": "Hátsó korlát",
       "details": "Rozsdamentes acél",
       "price": 182000,
-      "image": "hatsokorlat.jpg",
+      "image": "data/hatsokorlat.webp",
       "ID": "hatsokorlat"
     },
     {
       "title": "Háttámla",
-      "details": "Rozsdamentes acél háttámla vezetőüléshez",
+      "details": "Rozsdamentes acél háttámla vezetőüléshez, segít a kényelmesebb testtartásban kormányzás közben.",
       "price": 142000,
-      "image": "hattamla.jpg",
+      "image": "data/hattamla.webp",
       "ID": "hattamla"
     },
     {
       "title": "Dörzsléc",
-      "details": "Műanyag",
+      "details": "A hajó oldalához rögzített műanyag merevítő, amely megakadályozza a hajó oldalának sérülését és karcosodását.",
       "price": 49500,
       "ID": "dorzslec"
     },
     {
       "title": "Orrél védő",
-      "details": "Rozsdamentes acél",
+      "details": "Rozsdamentes acél, a hajó orrának éleit védi a károsodástól és az ütésektől.",
       "price": 33000,
+      "image": "data/orrelvedo.webp",
       "ID": "orrelvedo"
     },
     {
       "title": "Kikötőkarika",
-      "details": "Rozsdamentes acél, M8-M10",
+      "details": "A hajó elejéhez rögzített rozsdamentes acélkarika, amely a hajó biztonságos kikötéséhez szükséges. M8-M10 méret.",
       "price": 4500,
+      "image": "data/kikotokarika.webp",
       "ID": "kikotokarika"
     },
     {
       "title": "Kikötőbika",
-      "details": "Rozsdamentes acél, 150mm",
+      "details": "Segítségével a hajó biztonságosan és stabilan rögzíthető a kikötés során. Rozsdamentes acél, 150mm.",
       "price": 4500,
+      "image": "data/kikotobika.webp",
       "ID": "kikotokarika"
     },
     {
       "title": "Fürdőlépcső",
-      "details": "Tükörfalra építve",
+      "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
       "price": 55500,
+      "image": "data/hatsoletra.webp",
       "ID": "furdolepcso-hatso"
     },
     {
       "title": "Algagátló",
-      "details": "2 réteges algagátlás, VC 17M teflon",
+      "details": "Segít megakadályozni a hajótest algásodását és a károsodásokat, amelyeket az algák okozhatnak. 2 réteges, VC 17M teflon",
       "price": 75000,
-      "ID": "furdolepcso-hatso"
+      "image": "data/algavedo.webp",
+      "ID": "algagatlo"
     },
     {
       "title": "Italtartó",
-      "details": "Műanyag",
+      "details": "Praktikus műanyag tartó, amely segít az italok biztonságos szállításában és tárolásában a hajón.",
       "price": 15000,
+      "image": "data/italtarto.webp",
       "ID": "furdolepcso-hatso"
     }
   ],
@@ -84,5 +90,8 @@
       "price": 93500,
       "ID": "4T"
     }
-  ]
+  ],
+  [],
+  [],
+  []
 ]
