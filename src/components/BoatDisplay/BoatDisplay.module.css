@@ -18,6 +18,7 @@
   font-weight: 700;
   font-family: 'Arial';
   margin-left: 50px;
+  margin-top: 20px;
 }
 
 .boat_metadata {
@@ -25,6 +26,27 @@
   text-align: right;
   font-family: 'Arial';
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 50px;
+  line-height: 30px;
+}
+.price {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .boat_display {
+    width: 100vw;
+    height: 40%;
+  }
+  .metadata_panel {
+    height: 100px;
+  }
+  .boat_name {
+    font-size: 36px;
+    margin-left: 25px;
+  }
+  .boat_metadata {
+    margin-right: 25px;
+  }
 }

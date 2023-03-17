@@ -129,8 +129,9 @@ export default function BoatDisplay() {
       <div className={styles.metadata_panel}>
         <div className={styles.boat_name}>e.Balin Túra</div>
         <div className={styles.boat_metadata}>
-          Végösszeg: <br />
-          {useSelector((state) => state.boat.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft <br />+ ÁFA
+          Összesen: <br />
+          <span className={styles.price}>{useSelector((state) => state.boat.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft </span>
+          <br />+ ÁFA
         </div>
       </div>
     </div>
