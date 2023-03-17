@@ -19,7 +19,7 @@
   margin-right: 30px;
 }
 .text_pair {
-  width: 55%;
+  width: calc(100% - 270px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -29,7 +29,7 @@
 }
 .image_container {
   height: 100%;
-  width: calc(40% - 70px);
+  width: 200px;
   border-radius: 10px;
   overflow: hidden;
   margin-right: 10px;
@@ -70,4 +70,27 @@
 .description {
   color: #8b8b8b;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .entry_mainframe {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: unset;
+  }
+  .entry_checkbox {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 2vw;
+  }
+  .text_pair {
+    width: calc(100% - 12vw);
+  }
+  .image_container {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 80%;
+  }
 }
