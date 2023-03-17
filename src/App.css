@@ -7,3 +7,11 @@
   position: relative;
   background-color: #f1f1f1;
 }
+.fade-appear {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.fade-exit {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}

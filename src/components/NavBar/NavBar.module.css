@@ -1,0 +1,49 @@
+.icons_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  height: 70px;
+}
+
+.nav_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  box-sizing: border-box;
+  height: 65%;
+  transition: 0.15s linear;
+  background: #0c2d4c;
+}
+
+.nav_button:hover {
+  padding: 6px;
+  background-color: #144676;
+  transition: 0.15s linear;
+  cursor: pointer;
+}
+
+.button_parent {
+  width: 20%;
+  height: 100%;
+}
+
+.nav_button:hover + .button_label {
+  transition: 0.15s ease-in-out;
+  opacity: 1;
+}
+.image_sizing {
+  height: 100%;
+}
+
+.button_label {
+  height: 35%;
+  text-align: center;
+  background-color: #f0f0f0;
+  opacity: 0;
+}
