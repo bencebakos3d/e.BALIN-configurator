@@ -77,14 +77,17 @@
     flex-wrap: wrap;
     justify-content: center;
     height: unset;
+    align-items: flex-start;
   }
   .entry_checkbox {
     width: 8vw;
     height: 8vw;
     margin-right: 2vw;
+    margin-top: 2vw;
   }
   .text_pair {
     width: calc(100% - 12vw);
+    gap: 5px;
   }
   .image_container {
     margin-right: 0;

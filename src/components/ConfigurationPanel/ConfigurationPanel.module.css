@@ -132,8 +132,23 @@
   }
 }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
+  .arrow_button {
+    display: none;
+  }
   .title_bar {
     font-size: 24px;
     height: 50px;
+  }
+  .border_line {
+    width: 95%;
+  }
+  .entry_frame {
+    justify-content: center;
+  }
+  .content_zone_wrapper {
+    width: 95%;
+  }
+  .main_frame {
+    height: calc(100% - 40px);
   }
 }
