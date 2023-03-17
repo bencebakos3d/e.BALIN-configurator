@@ -130,7 +130,7 @@ export default function BoatDisplay() {
         <div className={styles.boat_name}>e.Balin Túra</div>
         <div className={styles.boat_metadata}>
           Végösszeg: <br />
-          {useSelector((state) => state.boat.totalCost)} Ft <br />+ ÁFA
+          {useSelector((state) => state.boat.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft <br />+ ÁFA
         </div>
       </div>
     </div>

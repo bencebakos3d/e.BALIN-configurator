@@ -116,8 +116,11 @@
 }
 .entry_frame {
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100% - 70px);
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
+}
+.page_wrapper {
+  height: calc(100% - 50px);
 }
