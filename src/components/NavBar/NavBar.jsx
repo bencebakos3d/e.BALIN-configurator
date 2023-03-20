@@ -12,42 +12,42 @@ export default function NavBar() {
   return (
     <div className={styles.icons_bar}>
       <div className={styles.button_parent}>
-        <NavLink to="/" className={styles.nav_button}>
+        <NavLink to="/" className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
           <img className={styles.image_sizing} src={boatBody} alt="" />
         </NavLink>
         <div className={styles.button_label}>Hajótest</div>
       </div>
 
       <div className={styles.button_parent}>
-        <NavLink to="/karpit" className={styles.nav_button}>
+        <NavLink to="/karpit" className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
           <img className={styles.image_sizing} src={carpet} alt="" />
         </NavLink>
         <div className={styles.button_label}>Kárpit</div>
       </div>
 
       <div className={styles.button_parent}>
-        <NavLink to="/elektronika" className={styles.nav_button}>
+        <NavLink to="/elektronika" className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
           <img className={styles.image_sizing} src={electronics} alt="" />
         </NavLink>
         <div className={styles.button_label}>Elektronika</div>
       </div>
 
       <div className={styles.button_parent}>
-        <NavLink to="/kiegeszitok" className={styles.nav_button}>
+        <NavLink to="/kiegeszitok" className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
           <img className={styles.image_sizing} src={accessories} alt="" />
         </NavLink>
         <div className={styles.button_label}>Kiegészítők</div>
       </div>
 
       <div className={styles.button_parent}>
-        <NavLink to="/tarolas" className={styles.nav_button}>
+        <NavLink to="/tarolas" className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
           <img className={styles.image_sizing} src={storage} alt="" />
         </NavLink>
         <div className={styles.button_label}>Tárolás</div>
       </div>
 
       <div className={styles.button_parent}>
-        <NavLink to="/osszesites" className={styles.nav_button}>
+        <NavLink to="/osszesites" className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
           <img className={styles.image_sizing} src={summary} alt="" />
         </NavLink>
         <div className={styles.button_label}>Összesítés</div>
