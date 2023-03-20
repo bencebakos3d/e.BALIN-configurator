@@ -123,7 +123,7 @@ export default function BoatDisplay() {
         <Environment files="./env/kloppenheim_05_puresky_1k.hdr" preset={'sunset'} />
         <EffectComposer>
           <HueSaturation hue={0} saturation={-0.4} />
-          <BrightnessContrast brightness={-0.03} contrast={-0.02} />
+          <BrightnessContrast brightness={0.02} contrast={-0.02} />
         </EffectComposer>
       </Canvas>
       <div className={styles.metadata_panel}>

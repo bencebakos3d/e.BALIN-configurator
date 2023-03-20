@@ -17,6 +17,13 @@
   align-items: center;
   justify-content: center;
   margin-right: 30px;
+  appearance: none;
+}
+.entry_checkbox:checked {
+  background-image: url(checked_icon.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 .text_pair {
   width: calc(100% - 270px);

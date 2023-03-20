@@ -2,27 +2,24 @@ import styles from './Entry.module.css';
 import checked_icon from './checked_icon.png';
 import { useState } from 'react';
 import { toggleOption, increaseCost, decreaseCost } from '../../optionsSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-export default function Entry({ handleCheck, title, description, image, price, model }) {
-  const [active, setActive] = useState(false);
+export default function Entry({ title, description, image, price, model }) {
   const dispatch = useDispatch();
 
-  function handleClick() {
-    setActive(!active);
+  function handleClick(myEvent) {
     dispatch(toggleOption(model));
-    if (active) {
-      dispatch(decreaseCost(price));
-    } else {
+    if (myEvent.target.checked) {
       dispatch(increaseCost(price));
+    } else {
+      dispatch(decreaseCost(price));
     }
   }
 
   return (
     <div className={styles.entry_mainframe}>
-      <div className={styles.entry_checkbox} onClick={handleClick}>
-        {active ? <img src={checked_icon} className={styles.check_image} alt="" /> : null}
-      </div>
+      <input className={styles.entry_checkbox} type="checkbox" name="" id="" onChange={handleClick} checked={useSelector((state) => state.boat[model])} />
+
       <div className={styles.text_pair}>
         <div className={styles.title}>{title}</div>
         <div className={styles.description}>{description}</div>
