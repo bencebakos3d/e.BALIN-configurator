@@ -59,6 +59,18 @@ export const optionsSlice = createSlice({
         case 'italtarto':
           state.italtarto = !state.italtarto;
           return;
+        case 'beigekarpit':
+          state.beigekarpit = !state.beigekarpit;
+          if (state.beigekarpit) {
+            state.kekkarpit = false;
+          }
+          return;
+        case 'kekkarpit':
+          state.kekkarpit = !state.kekkarpit;
+          if (state.kekkarpit) {
+            state.beigekarpit = false;
+          }
+          return;
       }
     },
     increaseCost: (state, action) => {

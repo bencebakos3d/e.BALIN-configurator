@@ -3,6 +3,7 @@ import Hajotest from '../../pages/Hajotest';
 import Karpit from '../../pages/Karpit';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
+import Elektronika from '../../pages/Elektronika';
 
 export default function ConfigurationPanel() {
   return (
@@ -13,6 +14,7 @@ export default function ConfigurationPanel() {
           <Routes>
             <Route exact path="/" element={<Hajotest />} />
             <Route path="/karpit" element={<Karpit />} />
+            <Route path="/elektronika" element={<Elektronika />} />
           </Routes>
           <div className={styles.page_footer}>
             <NavLink to="/" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)}></NavLink>

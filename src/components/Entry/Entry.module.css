@@ -9,10 +9,10 @@
 }
 .entry_checkbox {
   box-sizing: border-box;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #424750;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
   width: calc(100% - 270px);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 .entry_checkbox:hover {
   cursor: pointer;

@@ -80,18 +80,31 @@
   [
     {
       "title": "Tengerkék műbőr",
-      "details": "",
+      "details": "Tengerkék műbőr",
       "price": 93500,
-      "ID": "4T"
+      "ID": "kekkarpit"
     },
     {
       "title": "Beige műbőr",
-      "details": "",
+      "details": "Beige műbőr",
       "price": 93500,
-      "ID": "4T"
+      "ID": "beigekarpit"
     }
   ],
-  [],
+  [
+    {
+      "title": "Elektromos kiépítés",
+      "details": "Elektromos kiépítés",
+      "price": 38500,
+      "ID": "elektrokiepites"
+    },
+    {
+      "title": "360° LED helyzetjelző lámpa",
+      "details": "360° LED helyzetjelző lámpa",
+      "price": 14500,
+      "ID": "helyzetjelzo"
+    }
+  ],
   [],
   []
 ]
