@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../components/ConfigurationPanel/ConfigurationPanel.module.css';
 import entryData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
 import Entry from '../components/Entry/Entry';
-// import arrow_left from '../components/ConfigurationPanel/icons/arrow_left_icon.png';
+import arrow_left from '../components/ConfigurationPanel/icons/arrow_left_icon.png';
 import arrow_right from '../components/ConfigurationPanel/icons/arrow_right_icon.png';
 import { NavLink } from 'react-router-dom';
 
@@ -10,11 +10,13 @@ export default function Karpit() {
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.title_bar}>
-        <div>Hajótest</div>
+        <div>Kárpit</div>
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
-        <div className={styles.arrow_button}></div>
+        <NavLink to="/" className={styles.arrow_button}>
+          <img className={styles.arrow_image} src={arrow_left} alt="" />
+        </NavLink>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
             {entryData[1].map((item, i) => (
@@ -22,7 +24,7 @@ export default function Karpit() {
             ))}
           </div>
         </div>
-        <NavLink to="/karpit" className={styles.arrow_button}>
+        <NavLink to="/elektronika" className={styles.arrow_button}>
           <img className={styles.arrow_image} src={arrow_right} alt="" />
         </NavLink>
       </div>

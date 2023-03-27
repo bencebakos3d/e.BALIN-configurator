@@ -16,8 +16,8 @@ export const optionsSlice = createSlice({
     elsolepcso: false,
     algagatlo: false,
     italtarto: false,
-    karpitbeige: false,
-    karpitkek: false,
+    karpitBeige: false,
+    karpitKek: false,
     karpitKorlatBeige: false,
     karpitKorlatKek: false,
     karpitVezetoBeige: false,
@@ -59,16 +59,16 @@ export const optionsSlice = createSlice({
         case 'italtarto':
           state.italtarto = !state.italtarto;
           return;
-        case 'beigekarpit':
-          state.beigekarpit = !state.beigekarpit;
-          if (state.beigekarpit) {
-            state.kekkarpit = false;
+        case 'karpitBeige':
+          state.karpitBeige = !state.karpitBeige;
+          if (state.karpitBeige) {
+            state.karpitKek = false;
           }
           return;
-        case 'kekkarpit':
-          state.kekkarpit = !state.kekkarpit;
-          if (state.kekkarpit) {
-            state.beigekarpit = false;
+        case 'karpitKek':
+          state.karpitKek = !state.karpitKek;
+          if (state.karpitKek) {
+            state.karpitBeige = false;
           }
           return;
       }

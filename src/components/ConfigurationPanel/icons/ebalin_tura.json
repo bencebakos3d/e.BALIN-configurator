@@ -82,13 +82,27 @@
       "title": "Tengerkék műbőr",
       "details": "Tengerkék műbőr",
       "price": 93500,
-      "ID": "kekkarpit"
+      "image": "data/upholstery_kek.webp",
+      "ID": "karpitKek"
     },
     {
       "title": "Beige műbőr",
       "details": "Beige műbőr",
       "price": 93500,
-      "ID": "beigekarpit"
+      "image": "data/upholstery_beige.webp",
+      "ID": "karpitBeige"
+    },
+    {
+      "title": "Tengerkék műbőr korlát",
+      "details": "Tengerkék műbőr",
+      "price": 93500,
+      "ID": "karpitKorlatKek"
+    },
+    {
+      "title": "Beige műbőr korlát",
+      "details": "Beige műbőr",
+      "price": 93500,
+      "ID": "karpitKorlatBeige"
     }
   ],
   [
