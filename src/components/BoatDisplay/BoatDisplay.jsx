@@ -37,10 +37,7 @@ function Model() {
         <mesh geometry={nodes.Mesh006_3.geometry} material={materials.Kotel} />
         <mesh geometry={nodes.Mesh006_4.geometry} material={materials.Bimini_Top} />
       </group>
-      <group position={[0, 0.58, 0.02]} visible={useSelector((state) => state.boat.dorzslec)}>
-        <mesh geometry={nodes.Cube007.geometry} material={materials.Rail_metallic} />
-        <mesh geometry={nodes.Cube007_1.geometry} material={materials.BlackPlastic} />
-      </group>
+      <mesh position={[0, 0.58, 0.02]} geometry={nodes.Dorzslec.geometry} material={materials.BlackPlastic} visible={useSelector((state) => state.boat.dorzslec)} />
       <mesh geometry={nodes.El_vedo.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.orrelvedo)} />
       <group position={[0.17, 0.48, 0.67]} rotation={[-3.11, -0.44, 2.91]} visible={useSelector((state) => state.boat.italtarto)}>
         <mesh geometry={nodes.Mesh022.geometry} material={materials.Beercan_green} />
