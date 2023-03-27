@@ -117,8 +117,130 @@
       "details": "360° LED helyzetjelző lámpa",
       "price": 14500,
       "ID": "helyzetjelzo"
+    },
+    {
+      "title": "Süllyesztett akkutartó",
+      "details": "Süllyesztett akkutartó",
+      "price": 75000,
+      "ID": "akkutarto"
+    },
+    {
+      "title": "Azonosító chip",
+      "details": "Azonosító chip",
+      "price": 10500,
+      "ID": "chip"
+    },
+    {
+      "title": "Hozott halradar beépítése",
+      "details": "Hozott halradar beépítése",
+      "price": 49500,
+      "ID": "halradar"
     }
   ],
-  [],
-  []
+  [
+    {
+      "title": "Luc evező kézi faragással",
+      "details": "1 pár.",
+      "price": 30000,
+      "ID": "lucEvezo"
+    },
+    {
+      "title": "Pádli evező",
+      "details": "Csáklyával, mércével",
+      "price": 18000,
+      "ID": "padliEvezo"
+    },
+    {
+      "title": "Quad Lock telefontartó",
+      "details": "Csáklyával, mércével",
+      "price": 25000,
+      "ID": "telefontarto"
+    },
+    {
+      "title": "CANNON horgászbot tartó",
+      "details": "CANNON horgászbot tartó",
+      "price": 14500,
+      "ID": "horgaszbotTarto"
+    },
+    {
+      "title": "CANNON aljzat",
+      "details": "CANNON aljzat",
+      "price": 4500,
+      "ID": "horgaszbotAljzat"
+    },
+    {
+      "title": "Sárgaréz névtábla",
+      "details": "Sárgaréz névtábla",
+      "price": 7000,
+      "ID": "nevtabla"
+    },
+    {
+      "title": "Orr feliratozás",
+      "details": "UV álló",
+      "price": 24000,
+      "ID": "orrfelirat"
+    }
+  ],
+  [
+    {
+      "title": "Tároló ponyva",
+      "details": "Ezüst",
+      "price": 39500,
+      "ID": "ponyva"
+    },
+    {
+      "title": "Tároló ponyvához tartószerkezet",
+      "details": "",
+      "price": 58000,
+      "ID": "ponyvaTarto"
+    },
+    {
+      "title": "Motortakaró ponyva",
+      "details": "",
+      "price": 4500,
+      "ID": "motortakaro"
+    },
+    {
+      "title": "Összecsukható horgony",
+      "details": "",
+      "price": 16000,
+      "ID": "horgony"
+    },
+    {
+      "title": "Horgonykötél",
+      "details": "10mm (15fm)",
+      "price": 7500,
+      "ID": "horgonykotel"
+    },
+    {
+      "title": "Kikötőkötél",
+      "details": "8mm (2x5m)",
+      "price": 4000,
+      "ID": "kikotokotel"
+    },
+    {
+      "title": "Mericske",
+      "details": "",
+      "price": 1500,
+      "ID": "mericske"
+    },
+    {
+      "title": "Sólyakocsi tüzihorganyzott",
+      "details": "",
+      "price": 79000,
+      "ID": "solyakocsi1"
+    },
+    {
+      "title": "Sólyakocsi 2 bolygóval",
+      "details": "",
+      "price": 105000,
+      "ID": "solyakocsi2"
+    },
+    {
+      "title": "Sólyakocsi rozsdamentes",
+      "details": "",
+      "price": 170000,
+      "ID": "solyakocsi3"
+    }
+  ]
 ]

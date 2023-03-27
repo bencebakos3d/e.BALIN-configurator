@@ -64,7 +64,7 @@ function Model() {
         <mesh geometry={nodes.Mesh018.geometry} material={materials.Rail_metallic} />
         <mesh geometry={nodes.Mesh018_1.geometry} material={materials.White_plastic} />
       </group>
-      <mesh geometry={nodes.Nevtabla.geometry} material={materials.Copper} position={[0.73, 0.29, -0.01]} />
+      <mesh geometry={nodes.Nevtabla.geometry} material={materials.Copper} position={[0.73, 0.29, -0.01]} visible={useSelector((state) => state.boat.nevtabla)} />
       <mesh geometry={nodes.Anti_slippery.geometry} material={materials.Anti_slippery} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Boat_outer_hull001.geometry} material={materials['OuterBody.006']} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Bottom_keel001.geometry} material={materials.Base_white} position={[0, 0.58, 0]} />

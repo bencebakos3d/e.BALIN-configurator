@@ -4,6 +4,9 @@ import Karpit from '../../pages/Karpit';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import Elektronika from '../../pages/Elektronika';
+import Kiegeszitok from '../../pages/Kiegeszitok';
+import Tarolas from '../../pages/Tarolas';
+import Osszesites from '../../pages/Osszesites';
 
 export default function ConfigurationPanel() {
   return (
@@ -15,6 +18,9 @@ export default function ConfigurationPanel() {
             <Route exact path="/" element={<Hajotest />} />
             <Route path="/karpit" element={<Karpit />} />
             <Route path="/elektronika" element={<Elektronika />} />
+            <Route path="/kiegeszitok" element={<Kiegeszitok />} />
+            <Route path="/tarolas" element={<Tarolas />} />
+            <Route path="/osszesites" element={<Osszesites />} />
           </Routes>
           <div className={styles.page_footer}>
             <NavLink to="/" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)}></NavLink>

@@ -22,6 +22,27 @@ export const optionsSlice = createSlice({
     karpitKorlatKek: false,
     karpitVezetoBeige: false,
     karpitVezetoKek: false,
+    elektrokiepites: false,
+    helyzetjelzo: false,
+    akkutarto: false,
+    chip: false,
+    halradar: false,
+    lucEvezo: false,
+    padliEvezo: false,
+    telefontarto: false,
+    horgaszbotTarto: false,
+    horgaszbotAljzat: false,
+    nevtabla: false,
+    ponyva: false,
+    ponyvaTarto: false,
+    motortakaro: false,
+    horgony: false,
+    horgonykotel: false,
+    kikotokotel: false,
+    mericske: false,
+    solyakocsi1: false,
+    solyakocsi2: false,
+    solyakocsi3: false,
   },
   reducers: {
     toggleOption: (state, action) => {
@@ -71,6 +92,69 @@ export const optionsSlice = createSlice({
             state.karpitBeige = false;
           }
           return;
+        case 'elektrokiepites':
+          state.elektrokiepites = !state.elektrokiepites;
+          return;
+        case 'helyzetjelzo':
+          state.helyzetjelzo = !state.helyzetjelzo;
+          return;
+        case 'akkutarto':
+          state.akkutarto = !state.akkutarto;
+          return;
+        case 'chip':
+          state.chip = !state.chip;
+          return;
+        case 'halradar':
+          state.halradar = !state.halradar;
+          return;
+        case 'lucEvezo':
+          state.lucEvezo = !state.lucEvezo;
+          return;
+        case 'padliEvezo':
+          state.padliEvezo = !state.padliEvezo;
+          return;
+        case 'telefontarto':
+          state.telefontarto = !state.telefontarto;
+          return;
+        case 'horgaszbotTarto':
+          state.horgaszbotTarto = !state.horgaszbotTarto;
+          return;
+        case 'horgaszbotAljzat':
+          state.horgaszbotAljzat = !state.horgaszbotAljzat;
+          return;
+        case 'nevtabla':
+          state.nevtabla = !state.nevtabla;
+          return;
+        case 'ponyva':
+          state.ponyva = !state.ponyva;
+          return;
+        case 'ponyvaTarto':
+          state.ponyvaTarto = !state.ponyvaTarto;
+          return;
+        case 'motortakaro':
+          state.motortakaro = !state.motortakaro;
+          return;
+        case 'horgony':
+          state.horgony = !state.horgony;
+          return;
+        case 'horgonykotel':
+          state.horgonykotel = !state.horgonykotel;
+          return;
+        case 'kikotokotel':
+          state.kikotokotel = !state.kikotokotel;
+          return;
+        case 'mericske':
+          state.mericske = !state.mericske;
+          return;
+        case 'solyakocsi1':
+          state.solyakocsi1 = !state.solyakocsi1;
+          return;
+        case 'solyakocsi2':
+          state.solyakocsi2 = !state.solyakocsi2;
+          return;
+        case 'solyakocsi3':
+          state.solyakocsi3 = !state.solyakocsi3;
+          return;
       }
     },
     increaseCost: (state, action) => {
@@ -79,12 +163,6 @@ export const optionsSlice = createSlice({
     decreaseCost: (state, action) => {
       state.totalCost -= action.payload;
     },
-    // decrement: (state) => {
-    //   state.value -= 1;
-    // },
-    // incrementByAmount: (state, action) => {
-    //   state.value += action.payload;
-    // },
   },
 });
 

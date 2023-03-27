@@ -6,25 +6,25 @@ import arrow_left from '../components/ConfigurationPanel/icons/arrow_left_icon.p
 import arrow_right from '../components/ConfigurationPanel/icons/arrow_right_icon.png';
 import { NavLink } from 'react-router-dom';
 
-export default function Elektronika() {
+export default function Tarolas() {
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.title_bar}>
-        <div>Elektronika</div>
+        <div>Tárolás</div>
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
-        <NavLink to="/karpit" className={styles.arrow_button}>
+        <NavLink to="/kiegeszitok" className={styles.arrow_button}>
           <img className={styles.arrow_image} src={arrow_left} alt="" />
         </NavLink>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
-            {entryData[2].map((item, i) => (
+            {entryData[4].map((item, i) => (
               <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} />
             ))}
           </div>
         </div>
-        <NavLink to="/kiegeszitok" className={styles.arrow_button}>
+        <NavLink to="/osszesites" className={styles.arrow_button}>
           <img className={styles.arrow_image} src={arrow_right} alt="" />
         </NavLink>
       </div>
