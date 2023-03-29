@@ -10,7 +10,7 @@ export default function Kiegeszitok() {
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.title_bar}>
-        <div>Kiegészitők</div>
+        <div>Kiegészítők</div>
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
@@ -19,7 +19,7 @@ export default function Kiegeszitok() {
         </NavLink>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
-            {entryData[3].map((item, i) => (
+            {entryData['Kiegészítők'].map((item, i) => (
               <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} />
             ))}
           </div>

@@ -17,7 +17,7 @@ export default function Hajotest() {
         <div className={styles.arrow_button}></div>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
-            {entryData[0].map((item, i) => (
+            {entryData['Hajótest'].map((item, i) => (
               <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} />
             ))}
           </div>

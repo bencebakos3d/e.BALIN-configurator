@@ -1,5 +1,5 @@
-[
-  [
+{
+  "Hajótest": [
     {
       "title": "Bimini",
       "details": "Ideális nap és egyéb időjárási körülmények ellen. 145 x 190 x 110 cm",
@@ -77,7 +77,7 @@
       "ID": "italtarto"
     }
   ],
-  [
+  "Kárpit": [
     {
       "title": "Tengerkék műbőr",
       "details": "Tengerkék műbőr",
@@ -105,7 +105,7 @@
       "ID": "karpitKorlatBeige"
     }
   ],
-  [
+  "Elektronika": [
     {
       "title": "Elektromos kiépítés",
       "details": "Elektromos kiépítés",
@@ -137,7 +137,7 @@
       "ID": "halradar"
     }
   ],
-  [
+  "Kiegészítők": [
     {
       "title": "Luc evező kézi faragással",
       "details": "1 pár.",
@@ -181,7 +181,7 @@
       "ID": "orrfelirat"
     }
   ],
-  [
+  "Tárolás": [
     {
       "title": "Tároló ponyva",
       "details": "Ezüst",
@@ -243,4 +243,4 @@
       "ID": "solyakocsi3"
     }
   ]
-]
+}

@@ -124,6 +124,26 @@
 .page_wrapper {
   height: calc(100% - 50px);
 }
+.summary_category {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+}
+.summary_elements > div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  height: 30px;
+  font-size: 16px;
+}
+.summary_elements > div:nth-child(odd) {
+  background-color: #f0f0f0;
+}
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   .menu_container {

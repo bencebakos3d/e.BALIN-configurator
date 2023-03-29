@@ -19,7 +19,7 @@ export default function Tarolas() {
         </NavLink>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
-            {entryData[4].map((item, i) => (
+            {entryData['Tárolás'].map((item, i) => (
               <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} />
             ))}
           </div>

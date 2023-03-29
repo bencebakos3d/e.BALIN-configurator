@@ -19,7 +19,7 @@ export default function Karpit() {
         </NavLink>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
-            {entryData[1].map((item, i) => (
+            {entryData['Kárpit'].map((item, i) => (
               <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} />
             ))}
           </div>
