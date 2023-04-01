@@ -1,13 +1,11 @@
 import { Canvas } from '@react-three/fiber';
 import styles from './BoatDisplay.module.css';
 import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { useLoader } from '@react-three/fiber';
 import React, { useRef, useState, useReducer, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Bloom, BrightnessContrast, EffectComposer, HueSaturation } from '@react-three/postprocessing';
-import { BlendFunction } from 'postprocessing';
-// import { toggleBimini } from '../../optionsSlice';
+import { BrightnessContrast, EffectComposer, HueSaturation } from '@react-three/postprocessing';
+import { toggleFullscreen } from '../../optionsSlice';
+import arrow_close from './icons/arrow_close_icon.png';
 
 function Model() {
   const { nodes, materials } = useGLTF('/model/ebalin_tura2.gltf');
@@ -109,9 +107,11 @@ function Model() {
 useGLTF.preload('/model/ebalin_tura2.gltf');
 
 export default function BoatDisplay() {
+  const dispatch = useDispatch();
+
   return (
-    <div className={styles.boat_display}>
-      <Canvas camera={{ fov: 45, position: [2, 2, -5] }}>
+    <div className={useSelector((state) => state.boat.isFullscreen) ? styles.boat_display_fullscreen : styles.boat_display}>
+      <Canvas camera={{ fov: 45, position: [2, 2, -5] }} resize={{ debounce: 0 }}>
         <group>
           <Model></Model>
         </group>
@@ -129,6 +129,14 @@ export default function BoatDisplay() {
           <span className={styles.price}>{useSelector((state) => state.boat.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft </span>
           <br />+ ÁFA
         </div>
+      </div>
+      <div
+        className={styles.fullscreen_toggle}
+        onClick={() => {
+          dispatch(toggleFullscreen());
+        }}
+      >
+        <img src={arrow_close} alt="" className={useSelector((state) => state.boat.isFullscreen) ? styles.arrow_close_rotate : null} />
       </div>
     </div>
   );

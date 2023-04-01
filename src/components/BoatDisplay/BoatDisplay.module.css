@@ -1,6 +1,12 @@
 .boat_display {
   width: 60vw;
   position: relative;
+  transition: all 0.15s linear;
+}
+.boat_display_fullscreen {
+  width: 100vw;
+  position: relative;
+  transition: all 0.15s linear;
 }
 
 .metadata_panel {
@@ -32,6 +38,29 @@
 }
 .price {
   font-size: 26px;
+}
+
+.fullscreen_toggle {
+  height: 50px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d3d3d3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullscreen_toggle > img {
+  width: 100%;
+  filter: contrast(0.2);
+  transition: all 0.15s linear;
+}
+.arrow_close_rotate {
+  transform: rotate(180deg);
+  transition: all 0.15s linear;
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {

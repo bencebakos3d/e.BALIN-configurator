@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const optionsSlice = createSlice({
   name: 'boat',
   initialState: {
+    isFullscreen: false,
     totalCost: 2167000,
     bimini: false,
     orrkorlat: false,
@@ -163,10 +164,13 @@ export const optionsSlice = createSlice({
     decreaseCost: (state, action) => {
       state.totalCost -= action.payload;
     },
+    toggleFullscreen: (state) => {
+      state.isFullscreen = !state.isFullscreen;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleOption, increaseCost, decreaseCost } = optionsSlice.actions;
+export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen } = optionsSlice.actions;
 
 export default optionsSlice.reducer;

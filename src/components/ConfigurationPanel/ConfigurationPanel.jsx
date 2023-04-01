@@ -7,11 +7,12 @@ import Elektronika from '../../pages/Elektronika';
 import Kiegeszitok from '../../pages/Kiegeszitok';
 import Tarolas from '../../pages/Tarolas';
 import Osszesites from '../../pages/Osszesites';
+import { useSelector } from 'react-redux';
 
 export default function ConfigurationPanel() {
   return (
     <Router>
-      <div className={styles.menu_container}>
+      <div className={useSelector((state) => state.boat.isFullscreen) ? styles.menu_container_disabled : styles.menu_container}>
         <NavBar></NavBar>
         <div className={styles.main_frame}>
           <Routes>
