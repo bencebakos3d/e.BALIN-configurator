@@ -8,8 +8,9 @@ export const optionsSlice = createSlice({
     bimini: false,
     orrkorlat: false,
     hatsokorlat: false,
+    kormanyKapaszkodo: true,
     hattamla: false,
-    dorzslec: false,
+    dorzslec: true,
     orrelvedo: false,
     kikotokarika: false,
     kikotobika: false,
@@ -17,6 +18,8 @@ export const optionsSlice = createSlice({
     elsolepcso: false,
     algagatlo: false,
     italtarto: false,
+    tukorfal: true,
+    csapadekviz: true,
     karpitBeige: false,
     karpitKek: false,
     karpitKorlatBeige: false,
@@ -25,7 +28,7 @@ export const optionsSlice = createSlice({
     karpitVezetoKek: false,
     elektrokiepites: false,
     helyzetjelzo: false,
-    akkutarto: false,
+    akkutarto: true,
     chip: false,
     halradar: false,
     lucEvezo: false,
@@ -57,6 +60,9 @@ export const optionsSlice = createSlice({
         case 'hatsokorlat':
           state.hatsokorlat = !state.hatsokorlat;
           return;
+        case 'kormanyKapaszkodo':
+          state.kormanyKapaszkodo = !state.kormanyKapaszkodo;
+          return;
         case 'hattamla':
           state.hattamla = !state.hattamla;
           return;
@@ -80,6 +86,12 @@ export const optionsSlice = createSlice({
           return;
         case 'italtarto':
           state.italtarto = !state.italtarto;
+          return;
+        case 'tukorfal':
+          state.tukorfal = !state.tukorfal;
+          return;
+        case 'csapadekviz':
+          state.csapadekviz = !state.csapadekviz;
           return;
         case 'karpitBeige':
           state.karpitBeige = !state.karpitBeige;

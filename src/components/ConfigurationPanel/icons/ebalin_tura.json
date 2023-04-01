@@ -22,6 +22,12 @@
       "ID": "hatsokorlat"
     },
     {
+      "title": "Kormányálláson kapaszkodó",
+      "details": "Rozsdamentes acél",
+      "price": 61000,
+      "ID": "kormanyKapaszkodo"
+    },
+    {
       "title": "Háttámla",
       "details": "Rozsdamentes acél háttámla vezetőüléshez, segít a kényelmesebb testtartásban kormányzás közben.",
       "price": 142000,
@@ -75,6 +81,18 @@
       "price": 15000,
       "image": "data/italtarto.webp",
       "ID": "italtarto"
+    },
+    {
+      "title": "Tükörfal erősítés",
+      "details": "",
+      "price": 55000,
+      "ID": "tukorfal"
+    },
+    {
+      "title": "Csapadékvíz elvezetés",
+      "details": "",
+      "price": 38500,
+      "ID": "csapadekviz"
     }
   ],
   "Kárpit": [

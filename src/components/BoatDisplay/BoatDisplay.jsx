@@ -76,7 +76,7 @@ function Model() {
       </group>
       <mesh geometry={nodes.Cylinder016.geometry} material={materials.BlackPlastic} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Front_seat_cover.geometry} material={materials.Base_white} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Line006.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
+      <mesh geometry={nodes.Line006.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.kormanyKapaszkodo)} />
       <mesh geometry={nodes.Line017.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Line019.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.LockLower.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
