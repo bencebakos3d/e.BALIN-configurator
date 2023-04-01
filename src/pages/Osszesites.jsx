@@ -9,6 +9,8 @@ import { useSelector } from 'react-redux';
 
 export default function Osszesites() {
   const summaryCategories = [];
+
+  // Adds the enabled options to the page
   for (let i in entryData) {
     let summaryElements = [];
     for (let j = 0; j < entryData[i].length; j++) {
@@ -21,12 +23,14 @@ export default function Osszesites() {
         );
       }
     }
-    summaryCategories.push(
-      <div>
-        <div className={styles.summary_category}>{i}</div>
-        <div className={styles.summary_elements}>{summaryElements}</div>
-      </div>
-    );
+    if (summaryElements.length > 0) {
+      summaryCategories.push(
+        <div>
+          <div className={styles.summary_category}>{i}</div>
+          <div className={styles.summary_elements}>{summaryElements}</div>
+        </div>
+      );
+    }
   }
 
   return (
