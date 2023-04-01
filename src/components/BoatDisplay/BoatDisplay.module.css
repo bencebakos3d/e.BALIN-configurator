@@ -64,6 +64,9 @@
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .fullscreen_toggle {
+    display: none;
+  }
   .boat_display {
     width: 100vw;
     height: 40%;
