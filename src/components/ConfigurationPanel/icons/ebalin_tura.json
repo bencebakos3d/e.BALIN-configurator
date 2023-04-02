@@ -62,11 +62,17 @@
       "ID": "kikotobika"
     },
     {
-      "title": "Fürdőlépcső",
+      "title": "Hátsó fürdőlépcső",
       "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
       "price": 55500,
       "image": "data/hatsoletra.webp",
       "ID": "hatsolepcso"
+    },
+    {
+      "title": "Első fürdőlépcső",
+      "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
+      "price": 55500,
+      "ID": "elsolepcso"
     },
     {
       "title": "Algagátló",

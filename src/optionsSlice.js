@@ -4,6 +4,8 @@ export const optionsSlice = createSlice({
   name: 'boat',
   initialState: {
     isFullscreen: false,
+    showAlert: false,
+    alertText: '',
     totalCost: 2167000,
     bimini: false,
     orrkorlat: false,
@@ -15,6 +17,7 @@ export const optionsSlice = createSlice({
     kikotokarika: false,
     kikotobika: false,
     hatsolepcso: false,
+    elsolepcso: false,
     elsolepcso: false,
     algagatlo: false,
     italtarto: false,
@@ -81,6 +84,13 @@ export const optionsSlice = createSlice({
         case 'hatsolepcso':
           state.hatsolepcso = !state.hatsolepcso;
           return;
+        case 'elsolepcso':
+          state.elsolepcso = !state.elsolepcso;
+          if (state.elsolepcso && !state.orrkorlat) {
+            state.orrkorlat = true;
+            state.totalCost += 182000;
+          }
+          return;
         case 'algagatlo':
           state.algagatlo = !state.algagatlo;
           return;
@@ -103,6 +113,26 @@ export const optionsSlice = createSlice({
           state.karpitKek = !state.karpitKek;
           if (state.karpitKek) {
             state.karpitBeige = false;
+          }
+          s;
+          return;
+        case 'karpitKorlatBeige':
+          state.karpitKorlatBeige = !state.karpitKorlatBeige;
+          if (state.karpitKorlatBeige) {
+            state.hatsokorlat = true;
+            alert('halooo');
+          }
+          if (state.karpitKorlatKek) {
+            state.karpitKorlatKek = false;
+          }
+          return;
+        case 'karpitKorlatKek':
+          state.karpitKorlatKek = !state.karpitKorlatKek;
+          if (state.karpitKorlatKek) {
+            state.hatsokorlat = true;
+          }
+          if (state.karpitKorlatBeige) {
+            state.karpitKorlatBeige = false;
           }
           return;
         case 'elektrokiepites':

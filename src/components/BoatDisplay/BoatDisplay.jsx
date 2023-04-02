@@ -30,8 +30,9 @@ function Model() {
       <mesh geometry={nodes.Karpit_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitBeige)} />
       <mesh geometry={nodes.Karpit_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitKek)} />
       <mesh geometry={nodes.Karpit_korlat_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitKorlatBeige)} />
-      <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} visible={useSelector((state) => state.boat.karpitKorlatKek)} />
-      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} visible={useSelector((state) => state.boat.elsolepcso)} />
+      <mesh geometry={nodes.Karpit_korlat_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.karpitKorlatKek)} />
+      <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} visible={useSelector((state) => state.boat.karpitVezetoBeige)} />
+      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} visible={useSelector((state) => state.boat.karpitVezetoKek)} />
       <mesh geometry={nodes.Kikotobika.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.kikotobika)} />
       <mesh geometry={nodes.Kikotokarika.geometry} material={materials.Rail_metallic} position={[2, 0.39, -0.02]} rotation={[-Math.PI / 2, 0, 0]} visible={useSelector((state) => state.boat.kikotokarika)} />
       <mesh geometry={nodes.Korlat_hatso.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.hatsokorlat)} />
