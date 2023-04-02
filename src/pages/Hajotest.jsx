@@ -14,7 +14,6 @@ export default function Hajotest() {
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
-        <div className={styles.arrow_button}></div>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
             {entryData['Hajótest'].map((item, i) => (
@@ -22,9 +21,6 @@ export default function Hajotest() {
             ))}
           </div>
         </div>
-        <NavLink to="/karpit" className={styles.arrow_button}>
-          <img className={styles.arrow_image} src={arrow_right} alt="" />
-        </NavLink>
       </div>
     </div>
   );

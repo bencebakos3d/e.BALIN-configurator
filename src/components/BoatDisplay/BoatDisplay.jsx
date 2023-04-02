@@ -10,21 +10,6 @@ import arrow_close from './icons/arrow_close_icon.png';
 function Model() {
   const { nodes, materials } = useGLTF('/model/ebalin_tura2.gltf');
 
-  // const reducer = (state, action) => {
-  //   switch (action.type) {
-  //     case 'bimini':
-  //       return { bimini: !state };
-
-  //     case 'algagatlo':
-  //       return { algagatlo: !state };
-
-  //     case 'hello':
-  //       return;
-  // default:
-  //   throw new Error(`Unsupported action type: ${action.type}`);
-  //   }
-  // };
-
   return (
     <group dispose={null}>
       <mesh geometry={nodes.Algagatlo.geometry} material={materials.Algavedo} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.algagatlo)} />

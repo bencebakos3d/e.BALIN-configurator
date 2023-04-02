@@ -40,18 +40,9 @@ export default function Osszesites() {
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
-        <NavLink to="/tarolas" className={styles.arrow_button}>
-          <img className={styles.arrow_image} src={arrow_left} alt="" />
-        </NavLink>
         <div className={styles.content_zone_wrapper}>
-          <div className={styles.content_zone}>
-            {
-              // entryData.map((item, i) => entryData[item].map((item, j) => (useSelector((state) => state.boat[entryData[item][j].ID]) ? <div>{entryData[item][j].title}</div> : null)))
-              summaryCategories
-            }
-          </div>
+          <div className={styles.content_zone}>{summaryCategories}</div>
         </div>
-        <div className={styles.arrow_button}></div>
       </div>
     </div>
   );

@@ -14,9 +14,6 @@ export default function Kiegeszitok() {
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
-        <NavLink to="/elektronika" className={styles.arrow_button}>
-          <img className={styles.arrow_image} src={arrow_left} alt="" />
-        </NavLink>
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
             {entryData['Kiegészítők'].map((item, i) => (
@@ -24,9 +21,6 @@ export default function Kiegeszitok() {
             ))}
           </div>
         </div>
-        <NavLink to="/tarolas" className={styles.arrow_button}>
-          <img className={styles.arrow_image} src={arrow_right} alt="" />
-        </NavLink>
       </div>
     </div>
   );
