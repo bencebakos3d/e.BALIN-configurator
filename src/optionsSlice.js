@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import data from './components/ConfigurationPanel/icons/ebalin_tura.json';
 
 export const optionsSlice = createSlice({
   name: 'boat',
@@ -54,10 +55,17 @@ export const optionsSlice = createSlice({
   reducers: {
     toggleOption: (state, action) => {
       switch (action.payload) {
+        case 'showAlert':
+          state.showAlert = !state.showAlert;
+          return;
         case 'bimini':
           state.bimini = !state.bimini;
           return;
         case 'orrkorlat':
+          if (state.orrkorlat) {
+            state.elsolepcso = false;
+            state.totalCost -= data.Hajótest[10].price;
+          }
           state.orrkorlat = !state.orrkorlat;
           return;
         case 'hatsokorlat':
@@ -73,7 +81,12 @@ export const optionsSlice = createSlice({
           state.dorzslec = !state.dorzslec;
           return;
         case 'orrelvedo':
+          if (state.orrelvedo) {
+            state.elsolepcso = false;
+            state.totalCost -= data.Hajótest[10].price;
+          }
           state.orrelvedo = !state.orrelvedo;
+
           return;
         case 'kikotokarika':
           state.kikotokarika = !state.kikotokarika;
@@ -86,10 +99,17 @@ export const optionsSlice = createSlice({
           return;
         case 'elsolepcso':
           state.elsolepcso = !state.elsolepcso;
-          if (state.elsolepcso && !state.orrkorlat) {
-            state.orrkorlat = true;
-            state.totalCost += 182000;
+          if (state.elsolepcso) {
+            if (!state.orrkorlat) {
+              state.orrkorlat = true;
+              state.totalCost += data.Hajótest[1].price;
+            }
+            if (!state.orrelvedo) {
+              state.orrelvedo = true;
+              state.totalCost += data.Hajótest[6].price;
+            }
           }
+
           return;
         case 'algagatlo':
           state.algagatlo = !state.algagatlo;
@@ -105,16 +125,17 @@ export const optionsSlice = createSlice({
           return;
         case 'karpitBeige':
           state.karpitBeige = !state.karpitBeige;
-          if (state.karpitBeige) {
+          if (state.karpitBeige && state.karpitKek) {
             state.karpitKek = false;
+            state.totalCost -= data.Kárpit[0].price;
           }
           return;
         case 'karpitKek':
           state.karpitKek = !state.karpitKek;
-          if (state.karpitKek) {
+          if (state.karpitKek && state.karpitBeige) {
             state.karpitBeige = false;
+            state.totalCost -= data.Kárpit[1].price;
           }
-          s;
           return;
         case 'karpitKorlatBeige':
           state.karpitKorlatBeige = !state.karpitKorlatBeige;

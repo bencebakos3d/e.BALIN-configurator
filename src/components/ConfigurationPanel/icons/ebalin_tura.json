@@ -134,12 +134,14 @@
       "title": "Elektromos kiépítés",
       "details": "Elektromos kiépítés",
       "price": 38500,
+      "image": "data/elektrokiepites.webp",
       "ID": "elektrokiepites"
     },
     {
       "title": "360° LED helyzetjelző lámpa",
       "details": "360° LED helyzetjelző lámpa",
       "price": 14500,
+      "image": "data/helyzetjelzo.webp",
       "ID": "helyzetjelzo"
     },
     {
@@ -152,6 +154,7 @@
       "title": "Azonosító chip",
       "details": "Azonosító chip",
       "price": 10500,
+      "image": "data/chip.webp",
       "ID": "chip"
     },
     {
@@ -210,6 +213,7 @@
       "title": "Tároló ponyva",
       "details": "Ezüst",
       "price": 39500,
+      "image": "data/ponyva.webp",
       "ID": "ponyva"
     },
     {
@@ -252,18 +256,21 @@
       "title": "Sólyakocsi tüzihorganyzott",
       "details": "",
       "price": 79000,
+      "image": "data/solyakocsi1.webp",
       "ID": "solyakocsi1"
     },
     {
       "title": "Sólyakocsi 2 bolygóval",
       "details": "",
       "price": 105000,
+      "image": "data/solyakocsi2.webp",
       "ID": "solyakocsi2"
     },
     {
       "title": "Sólyakocsi rozsdamentes",
       "details": "",
       "price": 170000,
+      "image": "data/solyakocsi3.webp",
       "ID": "solyakocsi3"
     }
   ]

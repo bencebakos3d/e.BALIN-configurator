@@ -37,7 +37,7 @@ function Model() {
       <mesh geometry={nodes.Kikotokarika.geometry} material={materials.Rail_metallic} position={[2, 0.39, -0.02]} rotation={[-Math.PI / 2, 0, 0]} visible={useSelector((state) => state.boat.kikotokarika)} />
       <mesh geometry={nodes.Korlat_hatso.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.hatsokorlat)} />
       <mesh geometry={nodes.Korlat_orr.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.boat.orrkorlat)} />
-      <group position={[0.27, 0.66, -0.19]} rotation={[3.09, -0.05, 3.14]} visible={useSelector((state) => state.boat.elsolepcso)}>
+      <group position={[0.27, 0.66, -0.203]} rotation={[3.09, -0.05, 3.14]} visible={useSelector((state) => state.boat.elsolepcso)}>
         <mesh geometry={nodes.Mesh024.geometry} material={materials.Rail_metallic} />
         <mesh geometry={nodes.Mesh024_1.geometry} material={materials.White_plastic} />
       </group>
