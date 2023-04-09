@@ -59,7 +59,8 @@
       "details": "Segítségével a hajó biztonságosan és stabilan rögzíthető a kikötés során. Rozsdamentes acél, 150mm.",
       "price": 4500,
       "image": "data/kikotobika.webp",
-      "ID": "kikotobika"
+      "ID": "kikotobika",
+      "countable": true
     },
     {
       "title": "Hátsó fürdőlépcső",

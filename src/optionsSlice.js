@@ -16,7 +16,7 @@ export const optionsSlice = createSlice({
     dorzslec: true,
     orrelvedo: false,
     kikotokarika: false,
-    kikotobika: false,
+    kikotobika: 0,
     hatsolepcso: false,
     elsolepcso: false,
     elsolepcso: false,
@@ -90,9 +90,6 @@ export const optionsSlice = createSlice({
           return;
         case 'kikotokarika':
           state.kikotokarika = !state.kikotokarika;
-          return;
-        case 'kikotobika':
-          state.kikotobika = !state.kikotobika;
           return;
         case 'hatsolepcso':
           state.hatsolepcso = !state.hatsolepcso;
@@ -230,10 +227,22 @@ export const optionsSlice = createSlice({
     toggleFullscreen: (state) => {
       state.isFullscreen = !state.isFullscreen;
     },
+    changeOptionCount: (state, action) => {
+      switch (action.payload[0]) {
+        case 'kikotobika':
+          if (state.kikotobika === 0 && action.payload[1] < 0) {
+            return;
+          } else {
+            state.kikotobika += action.payload[1];
+            state.totalCost += action.payload[1] * data.Hajótest[8].price;
+            return;
+          }
+      }
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen } = optionsSlice.actions;
+export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen, changeOptionCount } = optionsSlice.actions;
 
 export default optionsSlice.reducer;

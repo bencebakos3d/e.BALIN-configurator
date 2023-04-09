@@ -2,9 +2,6 @@ import React from 'react';
 import styles from '../components/ConfigurationPanel/ConfigurationPanel.module.css';
 import entryData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
 import Entry from '../components/Entry/Entry';
-// import arrow_left from '../components/ConfigurationPanel/icons/arrow_left_icon.png';
-import arrow_right from '../components/ConfigurationPanel/icons/arrow_right_icon.png';
-import { NavLink } from 'react-router-dom';
 
 export default function Hajotest() {
   return (
@@ -17,7 +14,7 @@ export default function Hajotest() {
         <div className={styles.content_zone_wrapper}>
           <div className={styles.content_zone}>
             {entryData['Hajótest'].map((item, i) => (
-              <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} />
+              <Entry title={item.title} description={item.details} key={i} image={item.image} price={item.price} model={item.ID} countable={item.countable} />
             ))}
           </div>
         </div>

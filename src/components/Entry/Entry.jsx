@@ -1,8 +1,8 @@
 import styles from './Entry.module.css';
-import { toggleOption, increaseCost, decreaseCost } from '../../optionsSlice';
+import { toggleOption, increaseCost, decreaseCost, changeOptionCount } from '../../optionsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
-export default function Entry({ title, description, image, price, model }) {
+export default function Entry({ title, description, image, price, model, countable, count }) {
   const dispatch = useDispatch();
 
   function handleClick(myEvent) {
@@ -13,11 +13,26 @@ export default function Entry({ title, description, image, price, model }) {
       dispatch(decreaseCost(price));
     }
   }
+  function addCount(number) {
+    console.log('valami');
+    dispatch(changeOptionCount([model, number]));
+  }
 
   return (
     <div className={styles.entry_mainframe}>
-      <input className={styles.entry_checkbox} type="checkbox" name="" id="" onChange={handleClick} checked={useSelector((state) => state.boat[model])} />
-
+      {countable ? (
+        <div className={styles.counter_wrapper}>
+          <div className={styles.counter_button} onClick={() => addCount(1)}>
+            +
+          </div>
+          <div>{useSelector((state) => state.boat[model])}</div>
+          <div className={styles.counter_button} onClick={() => addCount(-1)}>
+            -
+          </div>
+        </div>
+      ) : (
+        <input className={styles.entry_checkbox} type="checkbox" name="" id="" onChange={handleClick} checked={useSelector((state) => state.boat[model])} />
+      )}
       <div className={styles.text_pair}>
         <div className={styles.title}>{title} </div>
         <div className={styles.description}>{description}</div>
