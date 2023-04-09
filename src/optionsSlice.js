@@ -16,7 +16,7 @@ export const optionsSlice = createSlice({
     dorzslec: true,
     orrelvedo: false,
     kikotokarika: false,
-    kikotobika: 0,
+    kikotobika: 1,
     hatsolepcso: false,
     elsolepcso: false,
     elsolepcso: false,
