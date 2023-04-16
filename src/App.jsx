@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 function App() {
   return (
     <div className="view_container">
-      {useSelector((state) => state.boat.showAlert) ? <Alert /> : null}
+      {useSelector((state) => state.tura.showAlert) ? <Alert /> : null}
       <BoatDisplay></BoatDisplay>
       <ConfigurationPanel></ConfigurationPanel>
     </div>

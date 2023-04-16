@@ -2,9 +2,6 @@ import React from 'react';
 import styles from '../components/ConfigurationPanel/ConfigurationPanel.module.css';
 import entryData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
 import Entry from '../components/Entry/Entry';
-import arrow_left from '../components/ConfigurationPanel/icons/arrow_left_icon.png';
-import arrow_right from '../components/ConfigurationPanel/icons/arrow_right_icon.png';
-import { NavLink } from 'react-router-dom';
 
 export default function Kiegeszitok() {
   return (

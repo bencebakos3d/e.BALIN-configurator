@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from './components/ConfigurationPanel/icons/ebalin_tura.json';
 
-export const optionsSlice = createSlice({
+export const turaSlice = createSlice({
   name: 'boat',
   initialState: {
     isFullscreen: false,
@@ -243,6 +243,6 @@ export const optionsSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen, changeOptionCount } = optionsSlice.actions;
+export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen, changeOptionCount } = turaSlice.actions;
 
-export default optionsSlice.reducer;
+export default turaSlice.reducer;

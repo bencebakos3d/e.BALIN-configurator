@@ -4,7 +4,7 @@ import { OrbitControls, Environment } from '@react-three/drei';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrightnessContrast, EffectComposer, HueSaturation } from '@react-three/postprocessing';
-import { toggleFullscreen } from '../../optionsSlice';
+import { toggleFullscreen } from '../../turaSlice';
 import arrow_close from './icons/arrow_close_icon.png';
 import EbalinTura from './EbalinTura';
 
@@ -12,7 +12,7 @@ export default function BoatDisplay() {
   const dispatch = useDispatch();
 
   return (
-    <div className={useSelector((state) => state.boat.isFullscreen) ? styles.boat_display_fullscreen : styles.boat_display}>
+    <div className={useSelector((state) => state.tura.isFullscreen) ? styles.boat_display_fullscreen : styles.boat_display}>
       <Canvas camera={{ fov: 45, position: [2, 2, -5] }} resize={{ debounce: 0 }}>
         <group>
           <EbalinTura></EbalinTura>
@@ -28,7 +28,7 @@ export default function BoatDisplay() {
         <div className={styles.boat_name}>e.Balin Túra</div>
         <div className={styles.boat_metadata}>
           Összesen: <br />
-          <span className={styles.price}>{useSelector((state) => state.boat.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft </span>
+          <span className={styles.price}>{useSelector((state) => state.tura.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft </span>
           <br />+ ÁFA
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function BoatDisplay() {
           dispatch(toggleFullscreen());
         }}
       >
-        <img src={arrow_close} alt="" className={useSelector((state) => state.boat.isFullscreen) ? styles.arrow_close_rotate : null} />
+        <img src={arrow_close} alt="" className={useSelector((state) => state.tura.isFullscreen) ? styles.arrow_close_rotate : null} />
       </div>
     </div>
   );

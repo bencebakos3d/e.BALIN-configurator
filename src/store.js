@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import optionsReducer from './optionsSlice';
+import turaReducer from './turaSlice';
 
 const store = configureStore({
   reducer: {
-    boat: optionsReducer,
+    tura: turaReducer,
   },
 });
 

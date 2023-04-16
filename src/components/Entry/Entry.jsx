@@ -1,5 +1,5 @@
 import styles from './Entry.module.css';
-import { toggleOption, increaseCost, decreaseCost, changeOptionCount } from '../../optionsSlice';
+import { toggleOption, increaseCost, decreaseCost, changeOptionCount } from '../../turaSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function Entry({ title, description, image, price, model, countable, count }) {
@@ -25,13 +25,13 @@ export default function Entry({ title, description, image, price, model, countab
           <div className={styles.counter_button} onClick={() => addCount(1)}>
             +
           </div>
-          <div>{useSelector((state) => state.boat[model])}</div>
+          <div>{useSelector((state) => state.tura[model])}</div>
           <div className={styles.counter_button} onClick={() => addCount(-1)}>
             -
           </div>
         </div>
       ) : (
-        <input className={styles.entry_checkbox} type="checkbox" name="" id="" onChange={handleClick} checked={useSelector((state) => state.boat[model])} />
+        <input className={styles.entry_checkbox} type="checkbox" name="" id="" onChange={handleClick} checked={useSelector((state) => state.tura[model])} />
       )}
       <div className={styles.text_pair}>
         <div className={styles.title}>{title} </div>

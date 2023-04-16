@@ -1,10 +1,6 @@
 import React from 'react';
 import styles from '../components/ConfigurationPanel/ConfigurationPanel.module.css';
 import entryData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
-import Entry from '../components/Entry/Entry';
-import arrow_left from '../components/ConfigurationPanel/icons/arrow_left_icon.png';
-import arrow_right from '../components/ConfigurationPanel/icons/arrow_right_icon.png';
-import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 export default function Osszesites() {
@@ -14,7 +10,7 @@ export default function Osszesites() {
   for (let i in entryData) {
     let summaryElements = [];
     for (let j = 0; j < entryData[i].length; j++) {
-      if (useSelector((state) => state.boat[entryData[i][j].ID])) {
+      if (useSelector((state) => state.tura[entryData[i][j].ID])) {
         summaryElements.push(
           <div>
             <div>{entryData[i][j].title}</div>
