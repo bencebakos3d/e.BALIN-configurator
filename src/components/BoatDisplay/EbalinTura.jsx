@@ -9,7 +9,6 @@ export default function EbalinTura() {
 
   return (
     <group dispose={null}>
-      <mesh geometry={nodes.Algagatlo.geometry} material={materials.Algavedo} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.algagatlo)} />
       <group position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.bimini)}>
         <mesh geometry={nodes.Mesh006.geometry} material={materials.Biminiplastic2} />
         <mesh geometry={nodes.Mesh006_1.geometry} material={materials.Rail_metallic} />
@@ -24,12 +23,12 @@ export default function EbalinTura() {
         <mesh geometry={nodes.Mesh022_1.geometry} material={materials.Beercan_top} />
         <mesh geometry={nodes.Mesh022_2.geometry} material={materials.BlackPlastic} />
       </group>
-      <mesh geometry={nodes.Karpit_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitBeige)} />
-      <mesh geometry={nodes.Karpit_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKek)} />
+      <mesh geometry={nodes.Karpit.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKek)} />
+      <mesh geometry={nodes.Karpit.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitBeige)} />
       <mesh geometry={nodes.Karpit_korlat_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKorlatBeige)} />
       <mesh geometry={nodes.Karpit_korlat_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKorlatKek)} />
       <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.karpitVezetoBeige)} />
-      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.karpitVezetoKek)} />
+      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.hattamla)} />
       <mesh geometry={nodes.Kikotobika.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 0 && true} />
       <mesh geometry={nodes.Kikotobika001.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 1 && true} />
       <mesh geometry={nodes.Kikotobika002.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 2 && true} />
@@ -46,8 +45,12 @@ export default function EbalinTura() {
       </group>
       <mesh geometry={nodes.Nevtabla.geometry} material={materials.Copper} position={[0.73, 0.29, -0.01]} visible={useSelector((state) => state.tura.nevtabla)} />
       <mesh geometry={nodes.Anti_slippery.geometry} material={materials.Anti_slippery} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Boat_outer_hull001.geometry} material={materials['OuterBody.006']} position={[0, 0.58, 0]} />
-      <mesh geometry={nodes.Bottom_keel001.geometry} material={materials.Base_white} position={[0, 0.58, 0]} />
+      <group position={[0, 0.58, 0]}>
+        <mesh geometry={nodes.Mesh080.geometry} material={materials['OuterBody.006']} />
+        <mesh geometry={nodes.Mesh080_1.geometry} material={useSelector((state) => state.tura.algagatlo) ? materials.Algavedo : materials['OuterBody.006']} />
+      </group>
+
+      <mesh geometry={nodes.Bottom_keel001.geometry} material={useSelector((state) => state.tura.algagatlo) ? materials.Algavedo : materials['OuterBody.006']} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Motor_remote.geometry} material={materials.Motor_remotecontrol} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Box021.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Box022.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} />
