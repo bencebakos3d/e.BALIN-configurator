@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function EbalinTura() {
   const { nodes, materials } = useGLTF('/model/ebalin_tura2.gltf');
-  useGLTF.preload('/model/ebalin_tura2.gltf');
+  // useGLTF.preload('/model/ebalin_tura2.gltf');
 
   return (
     <group dispose={null}>
