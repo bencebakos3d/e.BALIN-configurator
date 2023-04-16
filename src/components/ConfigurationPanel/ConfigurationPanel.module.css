@@ -62,7 +62,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+.content_zone > div {
+  margin-bottom: 20px;
 }
 .main_frame {
   height: calc(100% - 70px);
