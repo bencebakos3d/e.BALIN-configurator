@@ -25,6 +25,7 @@
       "title": "Kormányálláson kapaszkodó",
       "details": "Rozsdamentes acél",
       "price": 61000,
+      "image": "data/kormanyKapaszkodo.webp",
       "ID": "kormanyKapaszkodo"
     },
     {
@@ -38,6 +39,7 @@
       "title": "Dörzsléc",
       "details": "A hajó oldalához rögzített műanyag merevítő, amely megakadályozza a hajó oldalának sérülését és karcosodását.",
       "price": 49500,
+      "image": "data/dorzslec.webp",
       "ID": "dorzslec"
     },
     {
@@ -99,6 +101,7 @@
       "title": "Csapadékvíz elvezetés",
       "details": "",
       "price": 38500,
+      "image": "data/csapadekviz.webp",
       "ID": "csapadekviz"
     }
   ],
@@ -149,6 +152,7 @@
       "title": "Süllyesztett akkutartó",
       "details": "Süllyesztett akkutartó",
       "price": 75000,
+      "image": "data/akkutarto.webp",
       "ID": "akkutarto"
     },
     {
@@ -170,6 +174,7 @@
       "title": "Luc evező kézi faragással",
       "details": "1 pár.",
       "price": 30000,
+      "image": "data/lucEvezo.webp",
       "ID": "lucEvezo"
     },
     {
@@ -182,30 +187,35 @@
       "title": "Quad Lock telefontartó",
       "details": "Csáklyával, mércével",
       "price": 25000,
+      "image": "data/telefontarto.webp",
       "ID": "telefontarto"
     },
     {
       "title": "CANNON horgászbot tartó",
       "details": "CANNON horgászbot tartó",
       "price": 14500,
+      "image": "data/horgaszbotTarto.webp",
       "ID": "horgaszbotTarto"
     },
     {
       "title": "CANNON aljzat",
       "details": "CANNON aljzat",
       "price": 4500,
+      "image": "data/horgaszbotAljzat.webp",
       "ID": "horgaszbotAljzat"
     },
     {
       "title": "Sárgaréz névtábla",
       "details": "Sárgaréz névtábla",
       "price": 7000,
+      "image": "data/nevtabla.webp",
       "ID": "nevtabla"
     },
     {
       "title": "Orr feliratozás",
       "details": "UV álló",
       "price": 24000,
+      "image": "data/orrfelirat.webp",
       "ID": "orrfelirat"
     }
   ],
@@ -233,18 +243,21 @@
       "title": "Összecsukható horgony",
       "details": "",
       "price": 16000,
+      "image": "data/horgony.webp",
       "ID": "horgony"
     },
     {
       "title": "Horgonykötél",
       "details": "10mm (15fm)",
       "price": 7500,
+      "image": "data/horgonykotel.webp",
       "ID": "horgonykotel"
     },
     {
       "title": "Kikötőkötél",
       "details": "8mm (2x5m)",
       "price": 4000,
+      "image": "data/kikotokotel.webp",
       "ID": "kikotokotel"
     },
     {
