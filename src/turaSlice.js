@@ -24,12 +24,10 @@ export const turaSlice = createSlice({
     italtarto: false,
     tukorfal: true,
     csapadekviz: true,
-    karpitBeige: false,
-    karpitKek: false,
-    karpitKorlatBeige: false,
-    karpitKorlatKek: false,
-    karpitVezetoBeige: false,
-    karpitVezetoKek: false,
+    karpitColor: 'blue',
+    karpit: false,
+    karpitKorlat: false,
+    karpitVezeto: false,
     elektrokiepites: false,
     helyzetjelzo: false,
     akkutarto: true,
@@ -69,12 +67,22 @@ export const turaSlice = createSlice({
           state.orrkorlat = !state.orrkorlat;
           return;
         case 'hatsokorlat':
+          if (state.hatsokorlat) {
+            state.karpitKorlat = false;
+          } else {
+            state.karpitKorlat = true;
+          }
           state.hatsokorlat = !state.hatsokorlat;
           return;
         case 'kormanyKapaszkodo':
           state.kormanyKapaszkodo = !state.kormanyKapaszkodo;
           return;
         case 'hattamla':
+          if (!state.hattamla && state.karpit) {
+            state.karpitVezeto;
+          } else {
+            state.karpitVezeto = false;
+          }
           state.hattamla = !state.hattamla;
           return;
         case 'dorzslec':
@@ -120,38 +128,11 @@ export const turaSlice = createSlice({
         case 'csapadekviz':
           state.csapadekviz = !state.csapadekviz;
           return;
-        case 'karpitBeige':
-          state.karpitBeige = !state.karpitBeige;
-          if (state.karpitBeige && state.karpitKek) {
-            state.karpitKek = false;
-            state.totalCost -= data.Kárpit[0].price;
+        case 'karpit':
+          if (state.hatsokorlat) {
+            state.karpitKorlat = true;
           }
-          return;
-        case 'karpitKek':
-          state.karpitKek = !state.karpitKek;
-          if (state.karpitKek && state.karpitBeige) {
-            state.karpitBeige = false;
-            state.totalCost -= data.Kárpit[1].price;
-          }
-          return;
-        case 'karpitKorlatBeige':
-          state.karpitKorlatBeige = !state.karpitKorlatBeige;
-          if (state.karpitKorlatBeige) {
-            state.hatsokorlat = true;
-            alert('halooo');
-          }
-          if (state.karpitKorlatKek) {
-            state.karpitKorlatKek = false;
-          }
-          return;
-        case 'karpitKorlatKek':
-          state.karpitKorlatKek = !state.karpitKorlatKek;
-          if (state.karpitKorlatKek) {
-            state.hatsokorlat = true;
-          }
-          if (state.karpitKorlatBeige) {
-            state.karpitKorlatBeige = false;
-          }
+          state.karpit = !state.karpit;
           return;
         case 'elektrokiepites':
           state.elektrokiepites = !state.elektrokiepites;
@@ -227,6 +208,9 @@ export const turaSlice = createSlice({
     toggleFullscreen: (state) => {
       state.isFullscreen = !state.isFullscreen;
     },
+    setKarpitColor: (state, action) => {
+      state.karpitColor = action.payload;
+    },
     changeOptionCount: (state, action) => {
       switch (action.payload[0]) {
         case 'kikotobika':
@@ -243,6 +227,6 @@ export const turaSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen, changeOptionCount } = turaSlice.actions;
+export const { toggleOption, increaseCost, decreaseCost, toggleFullscreen, setKarpitColor, changeOptionCount } = turaSlice.actions;
 
 export default turaSlice.reducer;

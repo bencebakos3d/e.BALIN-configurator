@@ -7,6 +7,19 @@ export default function EbalinTura() {
   const { nodes, materials } = useGLTF('/model/ebalin_tura2.gltf');
   // useGLTF.preload('/model/ebalin_tura2.gltf');
 
+  let karpitColor = materials.Upholstery_blue;
+
+  switch (useSelector((state) => state.tura.karpitColor)) {
+    case 'blue':
+      karpitColor = materials.Upholstery_blue;
+      console.log('blue');
+      break;
+    case 'beige':
+      karpitColor = materials.Upholstery_beige;
+      console.log('beige');
+      break;
+  }
+
   return (
     <group dispose={null}>
       <group position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.bimini)}>
@@ -23,12 +36,9 @@ export default function EbalinTura() {
         <mesh geometry={nodes.Mesh022_1.geometry} material={materials.Beercan_top} />
         <mesh geometry={nodes.Mesh022_2.geometry} material={materials.BlackPlastic} />
       </group>
-      <mesh geometry={nodes.Karpit.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKek)} />
-      <mesh geometry={nodes.Karpit.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitBeige)} />
-      <mesh geometry={nodes.Karpit_korlat_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKorlatBeige)} />
-      <mesh geometry={nodes.Karpit_korlat_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKorlatKek)} />
-      <mesh geometry={nodes.Karpit_vezetoules_beige.geometry} material={materials.Upholstery_beige} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.karpitVezetoBeige)} />
-      <mesh geometry={nodes.Karpit_vezetoules_kek.geometry} material={materials.Upholstery_blue} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.hattamla)} />
+      <mesh geometry={nodes.Karpit.geometry} material={karpitColor} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpit)} />
+      <mesh geometry={nodes.Karpit_korlat.geometry} material={karpitColor} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKorlat)} />
+      <mesh geometry={nodes.Karpit_vezetoules.geometry} material={karpitColor} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.hattamla)} />
       <mesh geometry={nodes.Kikotobika.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 0 && true} />
       <mesh geometry={nodes.Kikotobika001.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 1 && true} />
       <mesh geometry={nodes.Kikotobika002.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 2 && true} />
