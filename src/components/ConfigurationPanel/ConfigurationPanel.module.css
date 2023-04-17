@@ -183,14 +183,14 @@
   background-color: #efefef;
 }
 .color_option {
-  padding: 20px;
+  padding: 10px;
 }
 .color_active {
-  padding: 18px;
+  padding: 8px;
   border: 2px solid #424750;
 }
 .color_text {
-  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .color_background {
   width: 100%;
