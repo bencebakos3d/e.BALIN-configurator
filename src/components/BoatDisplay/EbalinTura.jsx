@@ -5,8 +5,6 @@ import React from 'react';
 
 export default function EbalinTura() {
   const { nodes, materials } = useGLTF('/model/ebalin_tura2.gltf');
-  // useGLTF.preload('/model/ebalin_tura2.gltf');
-
   let karpitColor = materials.Upholstery_blue;
 
   switch (useSelector((state) => state.tura.karpitColor)) {

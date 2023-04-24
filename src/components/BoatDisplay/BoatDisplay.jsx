@@ -7,8 +7,9 @@ import { BrightnessContrast, EffectComposer, HueSaturation } from '@react-three/
 import { toggleFullscreen } from '../../turaSlice';
 import arrow_close from './icons/arrow_close_icon.png';
 import EbalinTura from './EbalinTura';
+import EbalinHorgasz from './EbalinHorgasz';
 
-export default function BoatDisplay() {
+export default function BoatDisplay({ model }) {
   const dispatch = useDispatch();
 
   return (
@@ -16,7 +17,8 @@ export default function BoatDisplay() {
       <Canvas camera={{ fov: 45, position: [2, 2, -5] }} resize={{ debounce: 0 }}>
         <Suspense fallback={null}>
           <group>
-            <EbalinTura></EbalinTura>
+            {model === 'tura' ? <EbalinTura></EbalinTura> : null}
+            {model === 'horgasz' ? <EbalinHorgasz></EbalinHorgasz> : null}
           </group>
           <OrbitControls enablePan={false} minDistance={1.8} maxDistance={8} maxPolarAngle={Math.PI / 2} dampingFactor={0.15} />
           <Environment files="./env/lake_pier_1k.hdr" />

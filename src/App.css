@@ -4,6 +4,7 @@
   overflow: hidden;
   display: flex;
   font-family: 'Poppins', sans-serif;
+  flex-direction: row;
   position: relative;
   background-color: #f1f1f1;
 }
