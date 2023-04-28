@@ -8,16 +8,17 @@ import Kiegeszitok from '../../pages/Kiegeszitok';
 import Tarolas from '../../pages/Tarolas';
 import Osszesites from '../../pages/Osszesites';
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 export default function ConfigurationPanel({ model }) {
   return (
     <div className={useSelector((state) => state.tura.isFullscreen) ? styles.menu_container_disabled : styles.menu_container}>
-      <NavBar path={model}></NavBar>
+      <NavBar></NavBar>
       <div className={styles.main_frame}>
         <Routes>
-          <Route exact path="/" element={<Hajotest />} />
-          <Route path="karpit" element={<Karpit />} />
-          <Route path="/elektronika" element={<Elektronika />} />
+          <Route exact path="/" element={<Hajotest model={model} />} />
+          <Route path={`karpit`} element={<Karpit />} />
+          <Route path={`elektronika`} element={<Elektronika />} />
           <Route path="/kiegeszitok" element={<Kiegeszitok />} />
           <Route path="/tarolas" element={<Tarolas />} />
           <Route path="/osszesites" element={<Osszesites />} />

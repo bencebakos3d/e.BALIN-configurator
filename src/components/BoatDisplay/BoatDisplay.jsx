@@ -30,10 +30,12 @@ export default function BoatDisplay({ model }) {
       </Canvas>
       <Loader containerStyles={{ background: 'transparent' }} innerStyles={{ width: '200px', height: '10px', background: '#d3d3d3' }} barStyles={{ height: '10px', background: '#0c2d4c' }} dataStyles={{ color: '#42474f', fontSize: '16px', fontFamily: 'Poppins' }} dataInterpolation={(p) => `Loading ${p.toFixed(0)}%`} />
       <div className={styles.metadata_panel}>
-        <div className={styles.boat_name}>e.Balin Túra</div>
+        {model === 'tura' ? <div className={styles.boat_name}>e.Balin Túra</div> : null}
+        {model === 'horgasz' ? <div className={styles.boat_name}>e.Balin Horgász</div> : null}
+
         <div className={styles.boat_metadata}>
           Összesen: <br />
-          <span className={styles.price}>{useSelector((state) => state.tura.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft </span>
+          <span className={styles.price}>{useSelector((state) => state[model].totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '))} Ft </span>
           <br />+ ÁFA
         </div>
       </div>

@@ -1,10 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore, createStore } from '@reduxjs/toolkit';
 import turaReducer from './turaSlice';
+import horgaszReducer from './horgaszSlice';
 
-const store = configureStore({
-  reducer: {
-    tura: turaReducer,
-  },
+const rootReducer = combineReducers({
+  tura: turaReducer,
+  horgasz: horgaszReducer,
 });
+
+const store = createStore(rootReducer);
 
 export default store;

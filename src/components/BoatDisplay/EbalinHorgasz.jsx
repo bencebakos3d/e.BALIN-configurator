@@ -24,7 +24,7 @@ export default function EbalinHorgasz() {
       <mesh geometry={nodes.Karpit_vezetoules.geometry} material={materials['Upholstery_beige.001']} />
       <mesh geometry={nodes.Karpit.geometry} material={materials.Upholstery_blue} />
       <mesh geometry={nodes.Upholstery_beige_back.geometry} material={materials.Upholstery_beige} />
-      <mesh geometry={nodes.Dorzslec.geometry} material={materials.BlackPlastic} />
+      <mesh geometry={nodes.Dorzslec.geometry} material={materials.BlackPlastic} visible={useSelector((state) => state.horgasz.dorzslec)} />
       <mesh geometry={nodes.Hatso_korlat.geometry} material={materials.Rail_metallic} />
       <mesh geometry={nodes.Kozep_korlat.geometry} material={materials.Rail_metallic} />
       <mesh geometry={nodes.Orrelvedo.geometry} material={materials.Rail_metallic} />
@@ -44,17 +44,25 @@ export default function EbalinHorgasz() {
       <mesh geometry={nodes.Cube001.geometry} material={materials.Anti_slippery} />
       <mesh geometry={nodes.Cylinder.geometry} material={materials.Rail_metallic} />
       <mesh geometry={nodes.Cylinder001.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Mesh085.geometry} material={materials.Biminiplastic2} />
-      <mesh geometry={nodes.Mesh085_1.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Mesh085_2.geometry} material={materials.Bimini_Top} />
-      <mesh geometry={nodes.Mesh085_3.geometry} material={materials.Biminiplastic} />
-      <mesh geometry={nodes.Mesh085_4.geometry} material={materials.Kotel} />
-      <mesh geometry={nodes.BezierCurve.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.BezierCurve_1.geometry} material={materials.BlackPlastic} />
-      <mesh geometry={nodes.BezierCurve_2.geometry} material={materials.Base_white} />
-      <mesh geometry={nodes.Mesh094.geometry} material={materials.BlackPlastic} />
-      <mesh geometry={nodes.Mesh094_1.geometry} material={materials.Beercan_green} />
-      <mesh geometry={nodes.Mesh094_2.geometry} material={materials.Beercan_top} />
+      <group visible={useSelector((state) => state.horgasz.bimini)}>
+        <mesh geometry={nodes.Mesh085.geometry} material={materials.Biminiplastic2} />
+        <mesh geometry={nodes.Mesh085_1.geometry} material={materials.Rail_metallic} />
+        <mesh geometry={nodes.Mesh085_2.geometry} material={materials.Bimini_Top} />
+        <mesh geometry={nodes.Mesh085_3.geometry} material={materials.Biminiplastic} />
+        <mesh geometry={nodes.Mesh085_4.geometry} material={materials.Kotel} />
+      </group>
+      <group>
+        <mesh geometry={nodes.BezierCurve.geometry} material={materials.Rail_metallic} />
+        <mesh geometry={nodes.BezierCurve_1.geometry} material={materials.BlackPlastic} />
+        <mesh geometry={nodes.BezierCurve_2.geometry} material={materials.Base_white} />
+      </group>
+
+      <group visible={useSelector((state) => state.horgasz.italtarto)}>
+        <mesh geometry={nodes.Mesh094.geometry} material={materials.BlackPlastic} />
+        <mesh geometry={nodes.Mesh094_1.geometry} material={materials.Beercan_green} />
+        <mesh geometry={nodes.Mesh094_2.geometry} material={materials.Beercan_top} />
+      </group>
+
       <mesh geometry={nodes.Mesh100.geometry} material={materials.Rail_metallic} />
       <mesh geometry={nodes.Mesh100_1.geometry} material={materials.White_plastic} />
       <mesh geometry={nodes.Mesh012.geometry} material={materials.Rail_metallic} />

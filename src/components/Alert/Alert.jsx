@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Alert.module.css';
-import { toggleOption } from '../../turaSlice';
+// import { toggleOption } from '../../turaSlice';
 import { useDispatch } from 'react-redux';
 
 export default function Alert() {
@@ -13,9 +13,9 @@ export default function Alert() {
         <div className={styles.alert_options}>
           <div>Vissza</div>
           <div
-            onClick={() => {
-              dispatch(toggleOption('showAlert'));
-            }}
+          // onClick={() => {
+          //   dispatch(toggleOption('showAlert'));
+          // }}
           >
             OK
           </div>

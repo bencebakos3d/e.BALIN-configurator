@@ -3,11 +3,11 @@ import styles from '../components/ConfigurationPanel/ConfigurationPanel.module.c
 import entryData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
 import Entry from '../components/Entry/Entry';
 
-export default function Hajotest() {
+export default function Hajotest({ model }) {
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.title_bar}>
-        <div>Hajótest</div>
+        <div>Hajótest {model}</div>
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>
