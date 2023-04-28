@@ -129,4 +129,10 @@
   .image_container > img {
     height: 150px;
   }
+  .title {
+    font-size: 20px;
+  }
+  .counter_wrapper {
+    margin-right: 2vw;
+  }
 }

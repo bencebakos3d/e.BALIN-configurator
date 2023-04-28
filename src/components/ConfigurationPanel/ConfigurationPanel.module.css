@@ -206,17 +206,14 @@
     height: 60%;
   }
   .content_zone_wrapper::-webkit-scrollbar-track {
-    -webkit-box-shadow: unset;
-    background-color: unset;
+    all: unset !important;
   }
   .content_zone_wrapper::-webkit-scrollbar {
-    width: 12px;
-    background-color: unset;
+    all: unset !important;
   }
 
   .content_zone_wrapper::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: unset;
-    background-color: unset;
+    all: unset !important;
   }
 }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
@@ -238,5 +235,8 @@
   }
   .main_frame {
     height: calc(100% - 40px);
+  }
+  .color_picker {
+    height: 120px;
   }
 }
