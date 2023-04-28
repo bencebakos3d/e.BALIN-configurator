@@ -20,16 +20,16 @@ export default function EbalinHorgasz() {
 
   return (
     <group dispose={null}>
-      <mesh geometry={nodes.Kikotokarika001.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Karpit_vezetoules.geometry} material={materials['Upholstery_beige.001']} />
-      <mesh geometry={nodes.Karpit.geometry} material={materials.Upholstery_blue} />
-      <mesh geometry={nodes.Upholstery_beige_back.geometry} material={materials.Upholstery_beige} />
+      <mesh geometry={nodes.Kikotokarika001.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.horgasz.kikotokarika)} />
+      <mesh geometry={nodes.Karpit_vezetoules.geometry} material={karpitColor} visible={useSelector((state) => state.horgasz.hattamla)} />
+      <mesh geometry={nodes.Karpit.geometry} material={karpitColor} visible={useSelector((state) => state.horgasz.karpit)} />
+      <mesh geometry={nodes.Upholstery_beige_back.geometry} material={materials.Upholstery_beige} visible={useSelector((state) => state.horgasz.karpitKorlat)} />
       <mesh geometry={nodes.Dorzslec.geometry} material={materials.BlackPlastic} visible={useSelector((state) => state.horgasz.dorzslec)} />
-      <mesh geometry={nodes.Hatso_korlat.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Kozep_korlat.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Orrelvedo.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Korlat_orr001.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Hattamla.geometry} material={materials['Rail_metallic.001']} />
+      <mesh geometry={nodes.Hatso_korlat.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.horgasz.hatsokorlat)} />
+      <mesh geometry={nodes.Kozep_korlat.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.horgasz.oldalkorlat)} />
+      <mesh geometry={nodes.Orrelvedo.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.horgasz.orrelvedo)} />
+      <mesh geometry={nodes.Korlat_orr001.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.horgasz.orrkorlat)} />
+      <mesh geometry={nodes.Hattamla.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.horgasz.hattamla)} />
       <mesh geometry={nodes.Kikotobika003.geometry} material={materials.Rail_metallic} />
       <mesh geometry={nodes.Kikotobika004.geometry} material={materials.Rail_metallic} />
       <mesh geometry={nodes.Kikotobika005.geometry} material={materials.Rail_metallic} />
@@ -71,10 +71,16 @@ export default function EbalinHorgasz() {
       <mesh geometry={nodes.Mesh012_3.geometry} material={materials.motor_Lower} />
       <mesh geometry={nodes.Mesh012_4.geometry} material={materials.BlackPlastic} />
       <mesh geometry={nodes.Mesh012_5.geometry} material={materials.motor_Cover} />
-      <mesh geometry={nodes.Mesh019.geometry} material={materials.Rail_metallic} />
-      <mesh geometry={nodes.Mesh019_1.geometry} material={materials.White_plastic} />
-      <mesh geometry={nodes.Mesh125.geometry} material={materials['OuterBody.006']} />
-      <mesh geometry={nodes.Mesh125_1.geometry} material={materials.Algavedo} />
+      <group visible={useSelector((state) => state.horgasz.elsolepcso)}>
+        <mesh geometry={nodes.Mesh019.geometry} material={materials.Rail_metallic} />
+        <mesh geometry={nodes.Mesh019_1.geometry} material={materials.White_plastic} />
+      </group>
+
+      <group>
+        <mesh geometry={nodes.Mesh125.geometry} material={materials['OuterBody.006']} />
+        <mesh geometry={nodes.Mesh125_1.geometry} material={useSelector((state) => state.horgasz.algagatlo) ? materials.Algavedo : materials['OuterBody.006']} />
+      </group>
+
       <mesh geometry={nodes.Mesh127.geometry} material={materials.Motor_remotecontrol} />
       <mesh geometry={nodes.Mesh127_1.geometry} material={materials.Blue_plastic} />
       <mesh geometry={nodes.Mesh151.geometry} material={materials.Mavimarelogo} />

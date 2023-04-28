@@ -7,7 +7,7 @@ export default function Hajotest({ model }) {
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.title_bar}>
-        <div>Hajótest {model}</div>
+        <div>Hajótest</div>
         <div className={styles.border_line}></div>
       </div>
       <div className={styles.entry_frame}>

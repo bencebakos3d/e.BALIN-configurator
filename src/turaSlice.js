@@ -10,6 +10,7 @@ export const turaSlice = createSlice({
     totalCost: 2167000,
     bimini: false,
     orrkorlat: false,
+    oldalkorlat: false,
     hatsokorlat: false,
     kormanyKapaszkodo: true,
     hattamla: false,
@@ -62,9 +63,12 @@ export const turaSlice = createSlice({
         case 'orrkorlat':
           if (state.orrkorlat) {
             state.elsolepcso = false;
-            state.totalCost -= data.Hajótest[10].price;
+            state.totalCost -= data.Hajótest[11].price;
           }
           state.orrkorlat = !state.orrkorlat;
+          return;
+        case 'oldalkorlat':
+          state.oldalkorlat = !state.oldalkorlat;
           return;
         case 'hatsokorlat':
           if (state.hatsokorlat) {
@@ -111,7 +115,7 @@ export const turaSlice = createSlice({
             }
             if (!state.orrelvedo) {
               state.orrelvedo = true;
-              state.totalCost += data.Hajótest[6].price;
+              state.totalCost += data.Hajótest[7].price;
             }
           }
 

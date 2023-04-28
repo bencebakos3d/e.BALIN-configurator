@@ -10,6 +10,7 @@ export const horgaszSlice = createSlice({
     totalCost: 1560000,
     bimini: false,
     orrkorlat: false,
+    oldalkorlat: false,
     hatsokorlat: false,
     kormanyKapaszkodo: true,
     hattamla: false,
@@ -65,6 +66,9 @@ export const horgaszSlice = createSlice({
             state.totalCost -= data.Hajótest[10].price;
           }
           state.orrkorlat = !state.orrkorlat;
+          return;
+        case 'oldalkorlat':
+          state.oldalkorlat = !state.oldalkorlat;
           return;
         case 'hatsokorlat':
           if (state.hatsokorlat) {

@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
 import { useGLTF } from '@react-three/drei';
-
 import React from 'react';
 
 export default function EbalinTura() {
@@ -10,11 +9,9 @@ export default function EbalinTura() {
   switch (useSelector((state) => state.tura.karpitColor)) {
     case 'blue':
       karpitColor = materials.Upholstery_blue;
-      console.log('blue');
       break;
     case 'beige':
       karpitColor = materials.Upholstery_beige;
-      console.log('beige');
       break;
   }
 
@@ -27,16 +24,16 @@ export default function EbalinTura() {
         <mesh geometry={nodes.Mesh006_3.geometry} material={materials.Kotel} />
         <mesh geometry={nodes.Mesh006_4.geometry} material={materials.Bimini_Top} />
       </group>
-      <mesh position={[0, 0.58, 0.02]} geometry={nodes.Dorzslec.geometry} material={materials.BlackPlastic} visible={useSelector((state) => state.tura.dorzslec)} />
+      <mesh position={[0, 0.58, 0.02]} geometry={nodes.Dorzslec001.geometry} material={materials.BlackPlastic} visible={useSelector((state) => state.tura.dorzslec)} />
       <mesh geometry={nodes.El_vedo.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.orrelvedo)} />
       <group position={[0.17, 0.48, 0.67]} rotation={[-3.11, -0.44, 2.91]} visible={useSelector((state) => state.tura.italtarto)}>
         <mesh geometry={nodes.Mesh022.geometry} material={materials.Beercan_green} />
         <mesh geometry={nodes.Mesh022_1.geometry} material={materials.Beercan_top} />
         <mesh geometry={nodes.Mesh022_2.geometry} material={materials.BlackPlastic} />
       </group>
-      <mesh geometry={nodes.Karpit.geometry} material={karpitColor} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpit)} />
+      <mesh geometry={nodes.Karpit001.geometry} material={karpitColor} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpit)} />
       <mesh geometry={nodes.Karpit_korlat.geometry} material={karpitColor} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.karpitKorlat)} />
-      <mesh geometry={nodes.Karpit_vezetoules.geometry} material={karpitColor} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.hattamla)} />
+      <mesh geometry={nodes.Karpit_vezetoules001.geometry} material={karpitColor} position={[0, 0.59, 0]} visible={useSelector((state) => state.tura.hattamla)} />
       <mesh geometry={nodes.Kikotobika.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 0 && true} />
       <mesh geometry={nodes.Kikotobika001.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 1 && true} />
       <mesh geometry={nodes.Kikotobika002.geometry} material={materials.Rail_metallic} position={[0, 0.58, 0]} visible={useSelector((state) => state.tura.kikotobika) > 2 && true} />
@@ -57,6 +54,7 @@ export default function EbalinTura() {
         <mesh geometry={nodes.Mesh080.geometry} material={materials['OuterBody.006']} />
         <mesh geometry={nodes.Mesh080_1.geometry} material={useSelector((state) => state.tura.algagatlo) ? materials.Algavedo : materials['OuterBody.006']} />
       </group>
+      <mesh geometry={nodes.Kozep_korlat001.geometry} material={materials.Rail_metallic} visible={useSelector((state) => state.tura.oldalkorlat)} />
 
       <mesh geometry={nodes.Bottom_keel001.geometry} material={useSelector((state) => state.tura.algagatlo) ? materials.Algavedo : materials['OuterBody.006']} position={[0, 0.58, 0]} />
       <mesh geometry={nodes.Motor_remote.geometry} material={materials.Motor_remotecontrol} position={[0, 0.58, 0]} />
