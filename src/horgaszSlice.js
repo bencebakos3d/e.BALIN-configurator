@@ -61,9 +61,9 @@ export const horgaszSlice = createSlice({
           state.bimini = !state.bimini;
           return;
         case 'orrkorlat':
-          if (state.orrkorlat) {
+          if (state.orrkorlat && state.elsolepcso) {
             state.elsolepcso = false;
-            state.totalCost -= data.Hajótest[10].price;
+            state.totalCost -= data.Hajótest[11].price;
           }
           state.orrkorlat = !state.orrkorlat;
           return;
@@ -93,12 +93,11 @@ export const horgaszSlice = createSlice({
           state.dorzslec = !state.dorzslec;
           return;
         case 'orrelvedo':
-          if (state.orrelvedo) {
+          if (state.orrelvedo && state.elsolepcso) {
             state.elsolepcso = false;
             state.totalCost -= data.Hajótest[10].price;
           }
           state.orrelvedo = !state.orrelvedo;
-
           return;
         case 'kikotokarika':
           state.kikotokarika = !state.kikotokarika;
@@ -115,7 +114,7 @@ export const horgaszSlice = createSlice({
             }
             if (!state.orrelvedo) {
               state.orrelvedo = true;
-              state.totalCost += data.Hajótest[6].price;
+              state.totalCost += data.Hajótest[7].price;
             }
           }
 
