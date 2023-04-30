@@ -50,6 +50,7 @@ export default function EbalinTura() {
       </group>
       <mesh geometry={nodes.Nevtabla.geometry} material={materials.Copper} position={[0.73, 0.29, -0.01]} visible={useSelector((state) => state.tura.nevtabla)} />
       <mesh geometry={nodes.Anti_slippery.geometry} material={materials.Anti_slippery} position={[0, 0.58, 0]} />
+      <mesh geometry={nodes.Antislippery.geometry} material={materials.Anti_slippery} />
       <group position={[0, 0.58, 0]}>
         <mesh geometry={nodes.Mesh080.geometry} material={materials['OuterBody.006']} />
         <mesh geometry={nodes.Mesh080_1.geometry} material={useSelector((state) => state.tura.algagatlo) ? materials.Algavedo : materials['OuterBody.006']} />
