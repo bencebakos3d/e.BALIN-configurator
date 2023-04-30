@@ -1,0 +1,24 @@
+.view_container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: row;
+  position: relative;
+  background-color: #f1f1f1;
+}
+.fade-appear {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.fade-exit {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .view_container {
+    flex-direction: column;
+  }
+}

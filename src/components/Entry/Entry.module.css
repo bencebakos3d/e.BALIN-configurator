@@ -1,0 +1,138 @@
+.entry_mainframe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+  height: 150px;
+}
+.entry_checkbox {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #424750;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-right: 30px;
+  appearance: none;
+}
+.entry_checkbox:checked {
+  background-image: url(checked_icon.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.text_pair {
+  width: calc(100% - 270px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.entry_checkbox:hover {
+  cursor: pointer;
+}
+.image_container {
+  height: 100%;
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.check_image {
+  width: 70%;
+  transition: 0.15s ease-in-out;
+}
+.entry_checkbox:hover > .check_image {
+  opacity: 0.5;
+  transition: 0.15s ease-in-out;
+}
+.entry_title {
+  font-weight: 500;
+}
+.arrow_button {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow_image {
+  width: 50%;
+  object-fit: contain;
+}
+.arrow_image:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+.entry_image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.title {
+  font-size: 22px;
+}
+.description {
+  color: #8b8b8b;
+  font-size: 14px;
+}
+.counter_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  margin-right: 30px;
+  gap: 5px;
+}
+.counter_button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 2px solid #424750;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .entry_mainframe {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: unset;
+    align-items: flex-start;
+  }
+  .entry_checkbox {
+    width: 7vw;
+    height: 7vw;
+    margin-right: 2vw;
+    margin-top: 2vw;
+  }
+  .text_pair {
+    width: calc(100% - 12vw);
+    gap: 5px;
+  }
+  .image_container {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-height: 150px;
+    width: 80%;
+  }
+  .image_container > img {
+    height: 150px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .counter_wrapper {
+    margin-right: 2vw;
+  }
+}

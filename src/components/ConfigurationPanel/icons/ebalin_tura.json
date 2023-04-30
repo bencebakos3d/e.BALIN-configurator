@@ -1,0 +1,277 @@
+{
+  "Hajótest": [
+    {
+      "title": "Bimini",
+      "details": "Ideális nap és egyéb időjárási körülmények ellen. 145 x 190 x 110 cm",
+      "price": 59000,
+      "image": "/data/bimini.webp",
+      "ID": "bimini"
+    },
+    {
+      "title": "Orr korlát",
+      "details": "Rozsdamentes acél korlát a hajó orrában, védi az utasokat a hirtelen mozgásoktól és a hullámoktól.",
+      "price": 182000,
+      "image": "/data/orrkorlat.webp",
+      "ID": "orrkorlat"
+    },
+    {
+      "title": "Oldalkorlát",
+      "details": "Rozsdamentes acél korlát a hajó oldalán, védi az utasokat a hirtelen mozgásoktól és a hullámoktól.",
+      "price": 44000,
+      "ID": "oldalkorlat"
+    },
+    {
+      "title": "Hátsó korlát",
+      "details": "Rozsdamentes acél",
+      "price": 182000,
+      "image": "/data/hatsokorlat.webp",
+      "ID": "hatsokorlat"
+    },
+    {
+      "title": "Kormányálláson kapaszkodó",
+      "details": "Rozsdamentes acél",
+      "price": 61000,
+      "image": "/data/kormanyKapaszkodo.webp",
+      "ID": "kormanyKapaszkodo"
+    },
+    {
+      "title": "Háttámla",
+      "details": "Rozsdamentes acél háttámla vezetőüléshez, segít a kényelmesebb testtartásban kormányzás közben.",
+      "price": 142000,
+      "image": "/data/hattamla.webp",
+      "ID": "hattamla"
+    },
+    {
+      "title": "Dörzsléc",
+      "details": "A hajó oldalához rögzített műanyag merevítő, amely megakadályozza a hajó oldalának sérülését és karcosodását.",
+      "price": 49500,
+      "image": "/data/dorzslec.webp",
+      "ID": "dorzslec"
+    },
+    {
+      "title": "Orrél védő",
+      "details": "Rozsdamentes acél, a hajó orrának éleit védi a károsodástól és az ütésektől.",
+      "price": 33000,
+      "image": "/data/orrelvedo.webp",
+      "ID": "orrelvedo"
+    },
+    {
+      "title": "Kikötőkarika",
+      "details": "A hajó elejéhez rögzített rozsdamentes acélkarika, amely a hajó biztonságos kikötéséhez szükséges. M8-M10 méret.",
+      "price": 4500,
+      "image": "/data/kikotokarika.webp",
+      "ID": "kikotokarika"
+    },
+    {
+      "title": "Kikötőbika",
+      "details": "Segítségével a hajó biztonságosan és stabilan rögzíthető a kikötés során. Rozsdamentes acél, 150mm.",
+      "price": 4500,
+      "image": "/data/kikotobika.webp",
+      "ID": "kikotobika",
+      "countable": true
+    },
+    {
+      "title": "Hátsó fürdőlépcső",
+      "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
+      "price": 55500,
+      "image": "/data/hatsoletra.webp",
+      "ID": "hatsolepcso"
+    },
+    {
+      "title": "Első fürdőlépcső",
+      "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
+      "price": 55500,
+      "ID": "elsolepcso"
+    },
+    {
+      "title": "Algagátló",
+      "details": "Segít megakadályozni a hajótest algásodását és a károsodásokat, amelyeket az algák okozhatnak. 2 réteges, VC 17M teflon",
+      "price": 75000,
+      "image": "/data/algavedo.webp",
+      "ID": "algagatlo"
+    },
+    {
+      "title": "Italtartó",
+      "details": "Praktikus műanyag tartó, amely segít az italok biztonságos szállításában és tárolásában a hajón.",
+      "price": 15000,
+      "image": "/data/italtarto.webp",
+      "ID": "italtarto"
+    },
+    {
+      "title": "Tükörfal erősítés",
+      "details": "",
+      "price": 55000,
+      "ID": "tukorfal"
+    },
+    {
+      "title": "Csapadékvíz elvezetés",
+      "details": "",
+      "price": 38500,
+      "image": "/data/csapadekviz.webp",
+      "ID": "csapadekviz"
+    }
+  ],
+  "Kárpit": [
+    {
+      "title": "Teljes műbőr kárpit",
+      "details": "Tartós és ellenálló az időjárási elemekkel szemben, ugyanakkor könnyen tisztítható és karbantartható.",
+      "price": 93500,
+      "ID": "karpit"
+    }
+  ],
+  "Elektronika": [
+    {
+      "title": "Elektromos kiépítés",
+      "details": "Lehetővé teszi az elektromos rendszerek, mint például a világítás és az elektromos motor működtetését.",
+      "price": 38500,
+      "image": "/data/elektrokiepites.webp",
+      "ID": "elektrokiepites"
+    },
+    {
+      "title": "360° LED helyzetjelző lámpa",
+      "details": "Hatékonyan jelzi a hajó helyzetét, így más hajók is könnyen észlelhetik a sötétben vagy rosszabb időjárási körülmények között.",
+      "price": 14500,
+      "image": "/data/helyzetjelzo.webp",
+      "ID": "helyzetjelzo"
+    },
+    {
+      "title": "Süllyesztett akkutartó",
+      "details": "Az akkumulátor biztonságos és stabil rögzítését teszi lehetővé.",
+      "price": 75000,
+      "image": "/data/akkutarto.webp",
+      "ID": "akkutarto"
+    },
+    {
+      "title": "Azonosító chip",
+      "details": "A chip segít azonosítani a hajót, ha az valamilyen okból eltűnik.",
+      "price": 10500,
+      "image": "/data/chip.webp",
+      "ID": "chip"
+    },
+    {
+      "title": "Hozott halradar beépítése",
+      "details": "",
+      "price": 49500,
+      "ID": "halradar"
+    }
+  ],
+  "Kiegészítők": [
+    {
+      "title": "Luc evező kézi faragással",
+      "details": "1 pár.",
+      "price": 30000,
+      "image": "/data/lucEvezo.webp",
+      "ID": "lucEvezo"
+    },
+    {
+      "title": "Pádli evező",
+      "details": "Csáklyával, mércével",
+      "price": 18000,
+      "ID": "padliEvezo"
+    },
+    {
+      "title": "Quad Lock telefontartó",
+      "details": "",
+      "price": 25000,
+      "image": "/data/telefontarto.webp",
+      "ID": "telefontarto"
+    },
+    {
+      "title": "CANNON horgászbot tartó",
+      "details": "FIGYELEM: Nem tartalmazza a rögzítéshez szükséges aljzatot.",
+      "price": 14500,
+      "image": "/data/horgaszbotTarto.webp",
+      "ID": "horgaszbotTarto"
+    },
+    {
+      "title": "CANNON aljzat",
+      "details": "A CANNON horgászbot tartó rögzítéséhez szükséges aljzat.",
+      "price": 4500,
+      "image": "/data/horgaszbotAljzat.webp",
+      "ID": "horgaszbotAljzat"
+    },
+    {
+      "title": "Sárgaréz névtábla",
+      "details": "",
+      "price": 7000,
+      "image": "/data/nevtabla.webp",
+      "ID": "nevtabla"
+    },
+    {
+      "title": "Orr feliratozás",
+      "details": "UV álló.",
+      "price": 24000,
+      "image": "/data/orrfelirat.webp",
+      "ID": "orrfelirat"
+    }
+  ],
+  "Tárolás": [
+    {
+      "title": "Tároló ponyva",
+      "details": "Ezüst",
+      "price": 39500,
+      "image": "/data/ponyva.webp",
+      "ID": "ponyva"
+    },
+    {
+      "title": "Tároló ponyvához tartószerkezet",
+      "details": "",
+      "price": 58000,
+      "ID": "ponyvaTarto"
+    },
+    {
+      "title": "Motortakaró ponyva",
+      "details": "",
+      "price": 4500,
+      "ID": "motortakaro"
+    },
+    {
+      "title": "Összecsukható horgony",
+      "details": "",
+      "price": 16000,
+      "image": "/data/horgony.webp",
+      "ID": "horgony"
+    },
+    {
+      "title": "Horgonykötél",
+      "details": "10mm (15fm)",
+      "price": 7500,
+      "image": "/data/horgonykotel.webp",
+      "ID": "horgonykotel"
+    },
+    {
+      "title": "Kikötőkötél",
+      "details": "8mm (2x5m)",
+      "price": 4000,
+      "image": "/data/kikotokotel.webp",
+      "ID": "kikotokotel"
+    },
+    {
+      "title": "Mericske",
+      "details": "",
+      "price": 1500,
+      "ID": "mericske"
+    },
+    {
+      "title": "Sólyakocsi tüzihorganyzott",
+      "details": "",
+      "price": 79000,
+      "image": "/data/solyakocsi1.webp",
+      "ID": "solyakocsi1"
+    },
+    {
+      "title": "Sólyakocsi 2 bolygóval",
+      "details": "",
+      "price": 105000,
+      "image": "/data/solyakocsi2.webp",
+      "ID": "solyakocsi2"
+    },
+    {
+      "title": "Sólyakocsi rozsdamentes",
+      "details": "",
+      "price": 170000,
+      "image": "/data/solyakocsi3.webp",
+      "ID": "solyakocsi3"
+    }
+  ]
+}
