@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import data from './components/ConfigurationPanel/icons/ebalin_horgasz.json';
+import data from './components/ConfigurationPanel/icons/ebalin_tura.json';
 
 export const horgaszSlice = createSlice({
   name: 'boat',
@@ -12,7 +12,7 @@ export const horgaszSlice = createSlice({
     orrkorlat: false,
     oldalkorlat: false,
     hatsokorlat: false,
-    kormanyKapaszkodo: true,
+    kormanyKapaszkodo: false,
     hattamla: false,
     dorzslec: true,
     orrelvedo: false,
@@ -24,7 +24,7 @@ export const horgaszSlice = createSlice({
     algagatlo: false,
     italtarto: false,
     tukorfal: true,
-    csapadekviz: true,
+    csapadekviz: false,
     karpitColor: 'blue',
     karpit: false,
     karpitKorlat: false,
