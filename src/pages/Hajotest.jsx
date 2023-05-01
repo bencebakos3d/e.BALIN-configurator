@@ -1,9 +1,20 @@
 import React from 'react';
 import styles from '../components/ConfigurationPanel/ConfigurationPanel.module.css';
-import entryData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
+import turaData from '../components/ConfigurationPanel/icons/ebalin_tura.json';
+import horgaszData from '../components/ConfigurationPanel/icons/ebalin_horgasz.json';
 import Entry from '../components/Entry/Entry';
 
 export default function Hajotest({ model }) {
+  let entryData = turaData;
+
+  switch (model) {
+    case 'tura':
+      break;
+    case 'horgasz':
+      entryData = horgaszData;
+      break;
+  }
+
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.title_bar}>
