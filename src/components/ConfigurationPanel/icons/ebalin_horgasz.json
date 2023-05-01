@@ -15,18 +15,17 @@
       "ID": "orrkorlat"
     },
     {
+      "title": "Oldalkorlát",
+      "details": "Rozsdamentes acél korlát a hajó oldalán, védi az utasokat a hirtelen mozgásoktól és a hullámoktól.",
+      "price": 44000,
+      "ID": "oldalkorlat"
+    },
+    {
       "title": "Hátsó korlát",
       "details": "Rozsdamentes acél",
       "price": 182000,
       "image": "/data/hatsokorlat.webp",
       "ID": "hatsokorlat"
-    },
-    {
-      "title": "Kormányálláson kapaszkodó",
-      "details": "Rozsdamentes acél",
-      "price": 61000,
-      "image": "/data/kormanyKapaszkodo.webp",
-      "ID": "kormanyKapaszkodo"
     },
     {
       "title": "Háttámla",

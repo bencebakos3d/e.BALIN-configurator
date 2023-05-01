@@ -12,7 +12,7 @@ export default function NavBar() {
   return (
     <div className={styles.icons_bar}>
       <div className={styles.button_parent}>
-        <NavLink to={``} className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)}>
+        <NavLink to={``} className={({ isActive }) => (isActive ? styles.nav_button_active : styles.nav_button)} end>
           <img className={styles.image_sizing} src={boatBody} alt="" />
         </NavLink>
         <div className={styles.button_label}>Hajótest</div>

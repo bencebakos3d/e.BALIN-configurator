@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import data from './components/ConfigurationPanel/icons/ebalin_tura.json';
+import data from './components/ConfigurationPanel/icons/ebalin_horgasz.json';
 
 export const horgaszSlice = createSlice({
   name: 'boat',
@@ -63,7 +63,7 @@ export const horgaszSlice = createSlice({
         case 'orrkorlat':
           if (state.orrkorlat && state.elsolepcso) {
             state.elsolepcso = false;
-            state.totalCost -= data.Hajótest[11].price;
+            state.totalCost -= data.Hajótest[10].price;
           }
           state.orrkorlat = !state.orrkorlat;
           return;
@@ -95,7 +95,7 @@ export const horgaszSlice = createSlice({
         case 'orrelvedo':
           if (state.orrelvedo && state.elsolepcso) {
             state.elsolepcso = false;
-            state.totalCost -= data.Hajótest[10].price;
+            state.totalCost -= data.Hajótest[9].price;
           }
           state.orrelvedo = !state.orrelvedo;
           return;
@@ -114,7 +114,7 @@ export const horgaszSlice = createSlice({
             }
             if (!state.orrelvedo) {
               state.orrelvedo = true;
-              state.totalCost += data.Hajótest[7].price;
+              state.totalCost += data.Hajótest[6].price;
             }
           }
 
@@ -221,7 +221,7 @@ export const horgaszSlice = createSlice({
             return;
           } else {
             state.kikotobika += action.payload[1];
-            state.totalCost += action.payload[1] * data.Hajótest[8].price;
+            state.totalCost += action.payload[1] * data.Hajótest[7].price;
             return;
           }
       }
