@@ -24,7 +24,7 @@ export default function ConfigurationPanel({ model }) {
           <Route path="osszesites" element={<Osszesites />} />
         </Routes>
         <div className={styles.page_footer}>
-          <NavLink to="" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)}></NavLink>
+          <NavLink to="" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)} end></NavLink>
           <NavLink to="karpit" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)}></NavLink>
           <NavLink to="elektronika" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)}></NavLink>
           <NavLink to="kiegeszitok" className={({ isActive }) => (isActive ? styles.round_index_active : styles.round_index)}></NavLink>
