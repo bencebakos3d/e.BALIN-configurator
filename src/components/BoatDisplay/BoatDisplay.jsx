@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import styles from './BoatDisplay.module.css';
 import { OrbitControls, Environment, Loader } from '@react-three/drei';
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrightnessContrast, EffectComposer, HueSaturation } from '@react-three/postprocessing';
 import { toggleFullscreen } from '../../turaSlice';
@@ -14,7 +14,7 @@ export default function BoatDisplay({ model }) {
 
   return (
     <div className={useSelector((state) => state.tura.isFullscreen) ? styles.boat_display_fullscreen : styles.boat_display}>
-      <Canvas camera={{ fov: 45, position: [2, 2, -5] }} resize={{ debounce: 0 }}>
+      <Canvas camera={{ fov: 45, position: [2, 2, -5] }} resize={{ debounce: 0 }} pixelRatio={[1, 2]}>
         <Suspense fallback={null}>
           <group>
             {model === 'tura' ? <EbalinTura></EbalinTura> : null}
