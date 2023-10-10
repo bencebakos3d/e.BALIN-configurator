@@ -10,7 +10,7 @@
     {
       "title": "Orr korlát",
       "details": "Rozsdamentes acél korlát a hajó orrában, védi az utasokat a hirtelen mozgásoktól és a hullámoktól.",
-      "price": 182000,
+      "price": 218000,
       "image": "/data/orrkorlat.webp",
       "ID": "orrkorlat"
     },
@@ -23,21 +23,21 @@
     {
       "title": "Hátsó korlát",
       "details": "Rozsdamentes acél",
-      "price": 182000,
+      "price": 218000,
       "image": "/data/hatsokorlat.webp",
       "ID": "hatsokorlat"
     },
     {
       "title": "Kormányálláson kapaszkodó",
       "details": "Rozsdamentes acél",
-      "price": 61000,
+      "price": 72000,
       "image": "/data/kormanyKapaszkodo.webp",
       "ID": "kormanyKapaszkodo"
     },
     {
       "title": "Háttámla",
       "details": "Rozsdamentes acél háttámla vezetőüléshez, segít a kényelmesebb testtartásban kormányzás közben.",
-      "price": 142000,
+      "price": 218000,
       "image": "/data/hattamla.webp",
       "ID": "hattamla"
     },
@@ -65,7 +65,7 @@
     {
       "title": "Kikötőbika",
       "details": "Segítségével a hajó biztonságosan és stabilan rögzíthető a kikötés során. Rozsdamentes acél, 150mm.",
-      "price": 4500,
+      "price": 5000,
       "image": "/data/kikotobika.webp",
       "ID": "kikotobika",
       "countable": true
@@ -73,14 +73,14 @@
     {
       "title": "Hátsó fürdőlépcső",
       "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
-      "price": 55500,
+      "price": 65000,
       "image": "/data/hatsoletra.webp",
       "ID": "hatsolepcso"
     },
     {
       "title": "Első fürdőlépcső",
       "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
-      "price": 55500,
+      "price": 84000,
       "ID": "elsolepcso"
     },
     {
@@ -93,7 +93,7 @@
     {
       "title": "Italtartó",
       "details": "Praktikus műanyag tartó, amely segít az italok biztonságos szállításában és tárolásában a hajón.",
-      "price": 15000,
+      "price": 14000,
       "image": "/data/italtarto.webp",
       "ID": "italtarto"
     },
@@ -115,7 +115,7 @@
     {
       "title": "Teljes műbőr kárpit",
       "details": "Tartós és ellenálló az időjárási elemekkel szemben, ugyanakkor könnyen tisztítható és karbantartható.",
-      "price": 93500,
+      "price": 94000,
       "ID": "karpit"
     }
   ],
@@ -130,7 +130,7 @@
     {
       "title": "360° LED helyzetjelző lámpa",
       "details": "Hatékonyan jelzi a hajó helyzetét, így más hajók is könnyen észlelhetik a sötétben vagy rosszabb időjárási körülmények között.",
-      "price": 14500,
+      "price": 17000,
       "image": "/data/helyzetjelzo.webp",
       "ID": "helyzetjelzo"
     },
@@ -144,7 +144,7 @@
     {
       "title": "Azonosító chip",
       "details": "A chip segít azonosítani a hajót, ha az valamilyen okból eltűnik.",
-      "price": 10500,
+      "price": 12000,
       "image": "/data/chip.webp",
       "ID": "chip"
     },
@@ -159,7 +159,7 @@
     {
       "title": "Luc evező kézi faragással",
       "details": "1 pár.",
-      "price": 30000,
+      "price": 32000,
       "image": "/data/lucEvezo.webp",
       "ID": "lucEvezo"
     },
@@ -193,14 +193,14 @@
     {
       "title": "Sárgaréz névtábla",
       "details": "",
-      "price": 7000,
+      "price": 14000,
       "image": "/data/nevtabla.webp",
       "ID": "nevtabla"
     },
     {
       "title": "Orr feliratozás",
       "details": "UV álló.",
-      "price": 24000,
+      "price": 14000,
       "image": "/data/orrfelirat.webp",
       "ID": "orrfelirat"
     }
@@ -235,7 +235,7 @@
     {
       "title": "Horgonykötél",
       "details": "10mm (15fm)",
-      "price": 7500,
+      "price": 9500,
       "image": "/data/horgonykotel.webp",
       "ID": "horgonykotel"
     },
@@ -255,14 +255,14 @@
     {
       "title": "Sólyakocsi tüzihorganyzott",
       "details": "",
-      "price": 79000,
+      "price": 85000,
       "image": "/data/solyakocsi1.webp",
       "ID": "solyakocsi1"
     },
     {
       "title": "Sólyakocsi 2 bolygóval",
       "details": "",
-      "price": 105000,
+      "price": 110000,
       "image": "/data/solyakocsi2.webp",
       "ID": "solyakocsi2"
     },
