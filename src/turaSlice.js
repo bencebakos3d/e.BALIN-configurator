@@ -67,6 +67,12 @@ export const turaSlice = createSlice({
         case 'belsoszin':
           state.belsoszin = !state.belsoszin;
           return;
+        case 'peremerosites':
+          state.peremerosites = !state.peremerosites;
+          return;
+        case 'kormanymu':
+          state.kormanymu = !state.kormanymu;
+          return;
         case 'bimini':
           state.bimini = !state.bimini;
           return;
