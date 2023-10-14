@@ -1,6 +1,43 @@
 {
   "Hajótest": [
     {
+      "title": "Egyedi külső szín",
+      "details": "RAL színskála szerint",
+      "price": 29500,
+      "ID": "kulsoszin"
+    },
+        {
+      "title": "Egyedi belső szín",
+      "details": "RAL színskála szerint",
+      "price": 39000,
+      "ID": "belsoszin"
+    },
+     {
+      "title": "Tükörfal erősítés",
+      "details": "",
+      "price": 55000,
+      "ID": "tukorfal"
+    },
+    {
+      "title": "Csapadékvíz elvezető",
+      "details": "Záró dugóval",
+      "price": 38500,
+      "image": "/data/csapadekviz.webp",
+      "ID": "csapadekviz"
+    },
+    {
+      "title": "Perem erősítés",
+      "details": "Korláthoz, szerelvényekhez előkészítés",
+      "price": 75000,
+      "ID": "peremerosites"
+    },
+    {
+      "title": "Kormánymű alap beépítés",
+      "details": "",
+      "price": 25000,
+      "ID": "kormanymu"
+    },
+    {
       "title": "Bimini",
       "details": "Ideális nap és egyéb időjárási körülmények ellen. 145 x 190 x 110 cm",
       "price": 59000,
