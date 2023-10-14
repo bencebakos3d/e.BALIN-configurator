@@ -8,6 +8,12 @@ export const turaSlice = createSlice({
     showAlert: false,
     alertText: '',
     totalCost: 2167000,
+    kulsoszin: false,
+    belsoszin: false,
+    tukorfal: false,
+    csapadekviz: false,
+    peremerosites: false,
+    kormanymu: false,
     bimini: false,
     orrkorlat: false,
     oldalkorlat: false,
@@ -23,8 +29,6 @@ export const turaSlice = createSlice({
     elsolepcso: false,
     algagatlo: false,
     italtarto: false,
-    tukorfal: false,
-    csapadekviz: false,
     karpitColor: 'blue',
     karpit: false,
     karpitKorlat: false,
@@ -57,13 +61,19 @@ export const turaSlice = createSlice({
         case 'showAlert':
           state.showAlert = !state.showAlert;
           return;
+        case 'kulsoszin':
+          state.kulsoszin = !state.kulsoszin;
+          return;
+        case 'belsoszin':
+          state.belsoszin = !state.belsoszin;
+          return;
         case 'bimini':
           state.bimini = !state.bimini;
           return;
         case 'orrkorlat':
           if (state.orrkorlat && state.elsolepcso) {
             state.elsolepcso = false;
-            state.totalCost -= data.Hajótest[11].price;
+            state.totalCost -= data.Hajótest[17].price;
           }
           state.orrkorlat = !state.orrkorlat;
           return;
@@ -95,7 +105,7 @@ export const turaSlice = createSlice({
         case 'orrelvedo':
           if (state.orrelvedo && state.elsolepcso) {
             state.elsolepcso = false;
-            state.totalCost -= data.Hajótest[10].price;
+            state.totalCost -= data.Hajótest[16].price;
           }
           state.orrelvedo = !state.orrelvedo;
           return;
@@ -110,11 +120,11 @@ export const turaSlice = createSlice({
           if (state.elsolepcso) {
             if (!state.orrkorlat) {
               state.orrkorlat = true;
-              state.totalCost += data.Hajótest[1].price;
+              state.totalCost += data.Hajótest[7].price;
             }
             if (!state.orrelvedo) {
               state.orrelvedo = true;
-              state.totalCost += data.Hajótest[7].price;
+              state.totalCost += data.Hajótest[13].price;
             }
           }
 
@@ -221,7 +231,7 @@ export const turaSlice = createSlice({
             return;
           } else {
             state.kikotobika += action.payload[1];
-            state.totalCost += action.payload[1] * data.Hajótest[8].price;
+            state.totalCost += action.payload[1] * data.Hajótest[14].price;
             return;
           }
       }
