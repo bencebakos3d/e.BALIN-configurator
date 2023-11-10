@@ -4,18 +4,21 @@
       "title": "Egyedi külső szín",
       "details": "RAL színskála szerint",
       "price": 29500,
+      "image": "/data/kulsoszin.webp",
       "ID": "kulsoszin"
     },
         {
       "title": "Egyedi belső szín",
       "details": "RAL színskála szerint",
       "price": 39000,
+      "image": "/data/belsoszin.webp",
       "ID": "belsoszin"
     },
      {
       "title": "Tükörfal erősítés",
       "details": "",
       "price": 55000,
+      "image": "/data/tukorfal.webp",
       "ID": "tukorfal"
     },
     {
@@ -24,18 +27,6 @@
       "price": 38500,
       "image": "/data/csapadekviz.webp",
       "ID": "csapadekviz"
-    },
-    {
-      "title": "Perem erősítés",
-      "details": "Korláthoz, szerelvényekhez előkészítés",
-      "price": 75000,
-      "ID": "peremerosites"
-    },
-    {
-      "title": "Kormánymű alap beépítés",
-      "details": "",
-      "price": 25000,
-      "ID": "kormanymu"
     },
     {
       "title": "Bimini",
@@ -118,6 +109,7 @@
       "title": "Első fürdőlépcső",
       "details": "A hajó tükörfalához rögzített lépcső, amely segítségével az utasok könnyen és biztonságosan feljuthatnak a hajóra a vízből, illetve lejuthatnak a vízbe.",
       "price": 84000,
+      "image": "/data/elsolepcso.webp",
       "ID": "elsolepcso"
     },
     {
@@ -176,6 +168,7 @@
       "title": "Hozott halradar beépítése",
       "details": "",
       "price": 49500,
+      "image": "/data/halradar.webp",
       "ID": "halradar"
     }
   ],
@@ -274,6 +267,7 @@
       "title": "Mericske",
       "details": "",
       "price": 1500,
+      "image": "/data/mericske.webp",
       "ID": "mericske"
     },
     {
