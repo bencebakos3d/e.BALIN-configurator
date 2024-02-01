@@ -3,7 +3,7 @@
     {
       "title": "Egyedi külső szín",
       "details": "RAL színskála szerint",
-      "price": 29500,
+      "price": 35000,
       "image": "/data/kulsoszin.webp",
       "ID": "kulsoszin"
     },
@@ -31,7 +31,7 @@
     {
       "title": "Bimini",
       "details": "Ideális nap és egyéb időjárási körülmények ellen. 145 x 190 x 110 cm",
-      "price": 59000,
+      "price": 69000,
       "image": "/data/bimini.webp",
       "ID": "bimini"
     },
@@ -58,7 +58,7 @@
     {
       "title": "Háttámla",
       "details": "Rozsdamentes acél háttámla vezetőüléshez, segít a kényelmesebb testtartásban kormányzás közben.",
-      "price": 218000,
+      "price": 165000,
       "image": "/data/hattamla.webp",
       "ID": "hattamla"
     },
@@ -79,7 +79,7 @@
     {
       "title": "Kikötőkarika",
       "details": "A hajó elejéhez rögzített rozsdamentes acélkarika, amely a hajó biztonságos kikötéséhez szükséges. M8-M10 méret.",
-      "price": 4500,
+      "price": 5500,
       "image": "/data/kikotokarika.webp",
       "ID": "kikotokarika"
     },
@@ -137,7 +137,7 @@
     {
       "title": "Teljes műbőr kárpit",
       "details": "Tartós és ellenálló az időjárási elemekkel szemben, ugyanakkor könnyen tisztítható és karbantartható.",
-      "price": 85000,
+      "price": 125000,
       "ID": "karpit"
     }
   ],
@@ -222,7 +222,7 @@
     {
       "title": "Orr feliratozás",
       "details": "UV álló.",
-      "price": 14000,
+      "price": 24000,
       "image": "/data/orrfelirat.webp",
       "ID": "orrfelirat"
     }
@@ -250,13 +250,13 @@
     {
       "title": "Összecsukható horgony",
       "details": "",
-      "price": 16000,
+      "price": 17500,
       "image": "/data/horgony.webp",
       "ID": "horgony"
     },
     {
       "title": "Horgonykötél",
-      "details": "10mm (15fm)",
+      "details": "10mm (12fm)",
       "price": 9500,
       "image": "/data/horgonykotel.webp",
       "ID": "horgonykotel"
@@ -278,21 +278,21 @@
     {
       "title": "Sólyakocsi tüzihorganyzott",
       "details": "",
-      "price": 85000,
+      "price": 98000,
       "image": "/data/solyakocsi1.webp",
       "ID": "solyakocsi1"
     },
     {
       "title": "Sólyakocsi 2 bolygóval",
       "details": "",
-      "price": 110000,
+      "price": 120000,
       "image": "/data/solyakocsi2.webp",
       "ID": "solyakocsi2"
     },
     {
       "title": "Sólyakocsi rozsdamentes",
       "details": "",
-      "price": 170000,
+      "price": 175000,
       "image": "/data/solyakocsi3.webp",
       "ID": "solyakocsi3"
     }
